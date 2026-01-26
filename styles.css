@@ -258,14 +258,15 @@ textarea{min-height:120px;resize:vertical}
 }
 
 .logo-img{
-  height:4px;
+  height:34px;
   width:auto;
-  max-width:4px;
+  max-width:34px;
   object-fit:contain;
   border-radius:8px;
   box-shadow: var(--shadow);
   background: transparent;
   display:block;
 }
+
 
 
