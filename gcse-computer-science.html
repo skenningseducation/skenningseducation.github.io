@@ -4,227 +4,248 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>GCSE/iGCSE Computer Science | Skennings Education</title>
-  <meta name="description" content="GCSE/iGCSE Computer Science taught online in small groups. Clear teaching, programming practice, and exam technique."/>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="main.js"></script>
+  <meta name="description" content="GCSE/iGCSE Computer Science taught online in small groups. Theory + programming + exam technique."/>
+  <style>
+:root{
+  --bg:#0b1220;--panel:#0f1a2e;--text:#e8eefc;--muted:#b7c3dd;--brand:#6aa7ff;--brand2:#8bffcc;
+  --line:rgba(255,255,255,.12);--shadow:0 10px 30px rgba(0,0,0,.35);--radius:18px;--maxw:1100px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#070b14 0%, #0b1220 40%, #070b14 100%);color:var(--text)}
+a{color:inherit}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 18px}
+.nav{position:sticky;top:0;z-index:20;background:rgba(7,11,20,.78);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-img{width:34px;height:34px;border-radius:10px;object-fit:contain;box-shadow:var(--shadow);background:rgba(255,255,255,.06)}
+.brand strong{font-size:15px;letter-spacing:.2px}
+.brand span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.menu{display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:flex-end}
+.menu a{font-size:13px;text-decoration:none;color:var(--muted);padding:8px 10px;border-radius:12px;border:1px solid transparent}
+.menu a:hover{color:var(--text);border-color:var(--line);background:rgba(255,255,255,.04)}
+.menu .cta{color:#071018;background:linear-gradient(135deg,var(--brand2),var(--brand));border:0;font-weight:650}
+.menu .cta:hover{filter:brightness(1.05)}
+.hero{padding:54px 0 22px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:stretch}
+@media (max-width: 880px){.hero-grid{grid-template-columns:1fr}.menu{justify-content:flex-start}}
+.card{background:rgba(15,26,46,.82);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.card.pad{padding:22px}
+h1{font-size:40px;line-height:1.08;margin:0 0 12px}
+@media (max-width:520px){h1{font-size:32px}}
+.lead{color:var(--muted);font-size:16px;line-height:1.6;margin:0 0 18px}
+.hr{height:1px;background:var(--line);margin:16px 0}
+.notice{padding:12px 14px;border-radius:16px;border:1px solid var(--line);background:rgba(106,167,255,.08);color:var(--muted)}
+.small{font-size:12px;color:var(--muted);line-height:1.6}
+.list{margin:0;padding-left:18px;color:var(--muted);line-height:1.7}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:10px 12px;border-radius:14px;border:1px solid var(--line);color:var(--text);font-weight:650;font-size:13px;background:rgba(255,255,255,.03)}
+.btn:hover{background:rgba(255,255,255,.06)}
+.btn.primary{border:0;color:#071018;background:linear-gradient(135deg,var(--brand2),var(--brand))}
+.table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:16px;border:1px solid var(--line)}
+.table th,.table td{padding:12px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.table th{background:rgba(255,255,255,.04);text-align:left;font-size:13px;color:var(--muted);font-weight:700}
+.table td{color:var(--muted);font-size:13px;line-height:1.5}
+.table tr:last-child td{border-bottom:0}
+.input{width:100%;margin-top:8px;padding:10px 12px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text);outline:none}
+.input::placeholder{color:rgba(183,195,221,.75)}
+textarea.input{min-height:110px;resize:vertical}
+.footer{padding:26px 0 42px;border-top:1px solid var(--line);margin-top:30px}
+.footer-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:14px}
+@media (max-width:900px){.footer-grid{grid-template-columns:1fr}}
+.footer a{color:var(--muted);text-decoration:none}
+.footer a:hover{color:var(--text)}
+  </style>
 </head>
 <body>
-
-<header class="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html">
-      <img src="images/logo.png" alt="Skennings Education logo" class="logo-img">
-      <div>
-        <strong>Skennings Education</strong>
-        <span>GCSE/iGCSE + A Level</span>
-      </div>
-    </a>
-	<nav class="menu" aria-label="Primary">
-	  <a href="index.html">Home</a>
-	  <a href="subjects.html" class="active">Subjects</a>
-	  <a href="how-it-works.html">How it works</a>
-	  <a href="prices.html" class="cta">Prices</a>
-	  <a href="faqs.html">FAQs</a>
-	  <a href="holiday-masterclasses.html">Holiday masterclasses</a>
-	</nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container hero-grid">
-
-    <div class="card pad">
-      <h1>GCSE/iGCSE Computer Science</h1>
-      <p class="lead">
-        A structured programme covering theory and programming, with regular exam practice.
-        Suitable as supplementary support alongside school or as a complete Computer Science pathway.
-      </p>
-
-      <div class="notice">
-        <strong>Included from Day 1:</strong> full lesson notes (Word/PDF), exam-style questions with worked answers,
-        and access to past papers for the student’s exam board. <strong>Maximum class size: 10 students.</strong>
-      </div>
-
-      <div class="hr"></div>
-
-      <h2 style="margin:0 0 10px">What we focus on</h2>
-      <ul class="list">
-        <li>Clear understanding of the full GCSE/iGCSE theory content</li>
-        <li>Programming in Python (building confidence and accuracy under time pressure)</li>
-        <li>Exam technique: command words, structure, mark-scheme language</li>
-        <li>Regular recall and practice so knowledge sticks</li>
-      </ul>
-
-      <div class="hr"></div>
-
-      <h2>How lessons run</h2>
-      <div class="split">
-        <div class="card pad" style="background:rgba(255,255,255,.03)">
-          <h3 style="margin-top:0">Weekly live teaching</h3>
-          <ul class="list">
-            <li>Teacher-led explanation and worked examples</li>
-            <li>Guided coding and problem solving</li>
-            <li>Regular checks for understanding</li>
-            <li>Short exam-style questions every week</li>
-          </ul>
-        </div>
-        <div class="card pad" style="background:rgba(255,255,255,.03)">
-          <h3 style="margin-top:0">Homework + feedback</h3>
-          <ul class="list">
-            <li>Weekly independent practice</li>
-            <li>Exam-style questions with model answers</li>
-            <li>Targeted improvements to gain marks</li>
-            <li>Timed practice to build speed and confidence</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="hr"></div>
-
-      <h2>Typical 30-week overview (Sept to exams)</h2>
-      <p class="small">Exact ordering is adapted to the exam board and class needs, while keeping full coverage.</p>
-
-      <table class="table" aria-label="30-week GCSE/iGCSE Computer Science overview">
-        <thead>
-          <tr>
-            <th>Weeks</th>
-            <th>Focus</th>
-            <th>Outcome</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1–6</td>
-            <td>Foundations: systems basics, CPU/memory/storage, data units, core concepts</td>
-            <td>Strong baseline understanding and accurate core explanations</td>
-          </tr>
-          <tr>
-            <td>7–12</td>
-            <td>Data representation + algorithms (tracing, pseudocode, common patterns)</td>
-            <td>Reliable methods and fewer mistakes in exam-style problems</td>
-          </tr>
-          <tr>
-            <td>13–18</td>
-            <td>Programming fundamentals (Python): variables, selection, iteration, lists, functions</td>
-            <td>Confident coding and structured solutions</td>
-          </tr>
-          <tr>
-            <td>19–24</td>
-            <td>Networks, cybersecurity, logic, databases (as required by exam board)</td>
-            <td>Clear theory answers and improved application to scenarios</td>
-          </tr>
-          <tr>
-            <td>25–27</td>
-            <td>Programming depth + exam patterns (timed tasks and typical question types)</td>
-            <td>Faster coding, stronger accuracy under exam timing</td>
-          </tr>
-          <tr>
-            <td>28–30</td>
-            <td>Exam phase: timed papers + targeted weak-area rebuild</td>
-            <td>Better timing, mark-scheme technique, exam confidence</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="hr"></div>
-
-      <div class="btnrow">
-        <a class="btn" href="subjects.html">Back to subjects</a>
-        <a class="btn primary" href="prices.html">View prices</a>
-      </div>
-    </div>
-
-    <aside class="card pad">
-      <h2 style="margin-top:0">Contact</h2>
-      <p class="small">
-        Phone: <a href="tel:07405664243">07405664243</a><br/>
-        Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
-      </p>
-
-      <div class="hr"></div>
-
-      <h3 style="margin:0 0 8px">Quick enquiry</h3>
-      <form onsubmit="return sendContactEmail(event)">
-        <input class="input" name="name" placeholder="Name (optional)">
-        <input class="input" name="email" placeholder="Email address *" type="email" required>
-        <input class="input" name="phone" placeholder="Phone (optional)">
-
-        <select class="input" name="subject">
-          <option>Computer Science</option>
-          <option>Maths</option>
-          <option>English</option>
-          <option>English Language</option>
-        </select>
-
-        <select class="input" name="level">
-          <option>GCSE/iGCSE</option>
-          <option>A Level</option>
-        </select>
-
-        <input class="input" name="year" placeholder="Year group (optional)">
-        <textarea class="input" name="message" placeholder="What does the student need help with? (Exam board if known)"></textarea>
-
-        <div class="btnrow">
-          <button class="btn primary" type="submit">Send enquiry</button>
-        </div>
-
-        <p class="small" style="margin-top:10px">This opens your email app with the message pre-filled.</p>
-      </form>
-    </aside>
-
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
         <img src="images/logo.png" alt="Skennings Education logo" class="logo-img">
         <div>
-          <div style="font-weight:800">Skennings Education</div>
-          <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
+          <strong>Skennings Education</strong>
+          <span>Online teaching (GCSE/iGCSE + A Level)</span>
+        </div>
+      </a>
+      <nav class="menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="subjects.html" style="color: var(--text); border-color: var(--line); background: rgba(255,255,255,.04)">Subjects</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="prices.html" class="cta">Prices</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="holiday-masterclasses.html">Holiday masterclasses</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div class="card pad">
+        <h1>GCSE/iGCSE Computer Science</h1>
+        <p class="lead">
+          Clear, structured teaching across theory and programming — built to increase marks through exam technique,
+          regular practice, and confident coding.
+        </p>
+
+        <div class="notice">
+          <strong>Included from Day 1:</strong> full lesson notes (Word/PDF), exam-style questions with worked answers, and past papers for the student’s exam board.
+          <strong>Maximum class size: 10 students.</strong>
+        </div>
+
+        <div class="hr"></div>
+
+        <h2 style="margin:0 0 10px">How lessons run</h2>
+        <ul class="list">
+          <li><strong>Live weekly lesson:</strong> explain → practise → check understanding.</li>
+          <li><strong>Coding practice:</strong> regular Python problems and exam-style tasks.</li>
+          <li><strong>Independent work:</strong> short, structured homework to keep progress steady.</li>
+          <li><strong>Feedback:</strong> how to gain marks and avoid common mistakes.</li>
+        </ul>
+
+        <div class="hr"></div>
+
+        <h2 style="margin:0 0 10px">30-week overview plan</h2>
+        <p class="small">General structure. Exact sequencing is aligned to the student’s exam board.</p>
+
+        <table class="table" aria-label="GCSE/iGCSE Computer Science 30-week plan">
+          <thead>
+            <tr>
+              <th>Weeks</th>
+              <th>Main focus</th>
+              <th>Typical outcomes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1–5</td>
+              <td>Foundations: systems, data basics, exam method</td>
+              <td>Stronger core understanding and fewer simple errors</td>
+            </tr>
+            <tr>
+              <td>6–10</td>
+              <td>Programming core: sequence/selection/iteration, problem solving</td>
+              <td>Confidence writing and tracing code under time pressure</td>
+            </tr>
+            <tr>
+              <td>11–15</td>
+              <td>Data representation + logic</td>
+              <td>Reliable marks on binary/hex, images/sound, and logic</td>
+            </tr>
+            <tr>
+              <td>16–20</td>
+              <td>Networks, security, and online safety</td>
+              <td>Clear explanations for applied/scenario questions</td>
+            </tr>
+            <tr>
+              <td>21–25</td>
+              <td>Systems software, databases, and fundamentals</td>
+              <td>Better structured written answers and terminology</td>
+            </tr>
+            <tr>
+              <td>26–30</td>
+              <td>Revision + past papers</td>
+              <td>Timed papers, mark-scheme technique, exam readiness</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="hr"></div>
+
+        <div class="btnrow">
+          <a class="btn" href="subjects.html">Back to subjects</a>
+          <a class="btn" href="a-level-computer-science.html">A Level Computer Science</a>
+          <a class="btn primary" href="prices.html">View prices</a>
         </div>
       </div>
-      <div class="small">Phone: <a href="tel:07405664243">07405664243</a> · Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a></div>
-      <div class="small" style="margin-top:8px">© 2026 Skennings Education. All rights reserved.</div>
+
+      <div class="card pad">
+        <h2 style="margin-top:0">Contact</h2>
+        <p class="small">
+          Phone: <a href="tel:07405664243">07405664243</a><br>
+          Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
+        </p>
+
+        <div class="hr"></div>
+
+        <h3 style="margin:0 0 8px">Quick enquiry</h3>
+        <form onsubmit="return sendContactEmail(event)">
+          <input class="input" name="name" placeholder="Parent/Guardian name" required>
+          <input class="input" name="email" placeholder="Email address" type="email" required>
+          <input class="input" name="phone" placeholder="Phone (optional)">
+
+          <select class="input" name="subject" required>
+            <option value="">Subject</option>
+            <option selected>Computer Science</option>
+            <option>Maths</option>
+            <option>English</option>
+          </select>
+
+          <select class="input" name="level" required>
+            <option value="">Level</option>
+            <option selected>GCSE/iGCSE</option>
+            <option>A Level</option>
+          </select>
+
+          <input class="input" name="year" placeholder="Year group (e.g., 10 or 11)" required>
+
+          <textarea class="input" name="message" placeholder="Tell us what the student needs help with (and exam board if known)..." required></textarea>
+
+          <div class="btnrow">
+            <button class="btn primary" type="submit">Send enquiry</button>
+          </div>
+
+          <p class="small" style="margin-top:10px">This opens your email app with the message pre-filled.</p>
+        </form>
+      </div>
+
     </div>
-    <div>
-      <div class="small" style="font-weight:800;margin-bottom:8px">Quick links</div>
-      <div class="small" style="display:flex;flex-direction:column;gap:6px">
-        <a href="subjects.html">Subjects</a>
-        <a href="how-it-works.html">How it works</a>
-        <a href="prices.html">Prices</a>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+          <img src="images/logo.png" alt="Skennings Education logo" class="logo-img">
+          <div>
+            <div style="font-weight:800">Skennings Education</div>
+            <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
+          </div>
+        </div>
+        <div class="small">Phone: <a href="tel:07405664243">07405664243</a> · Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a></div>
+        <div class="small" style="margin-top:8px">© 2026 Skennings Education. All rights reserved.</div>
+      </div>
+      <div>
+        <div class="small" style="font-weight:800;margin-bottom:8px">Quick links</div>
+        <div class="small" style="display:flex;flex-direction:column;gap:6px">
+          <a href="subjects.html">Subjects</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="prices.html">Prices</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script>
+  <script>
 function sendContactEmail(e){
   e.preventDefault();
   const f = e.target;
 
-  const chosenSubject = (f.subject && f.subject.value) ? f.subject.value : "Enquiry";
-  const chosenLevel = (f.level && f.level.value) ? f.level.value : "";
-  const yearTxt = (f.year && f.year.value) ? (" (Year " + f.year.value + ")") : "";
+  const subj = "Enquiry — " + (f.subject?.value || "") + " " + (f.level?.value || "") + (f.year?.value ? (" (Year " + f.year.value + ")") : "");
+  const subject = encodeURIComponent(subj);
 
-  const subject = encodeURIComponent("Enquiry — " + chosenSubject + " " + chosenLevel + yearTxt);
+  const body = encodeURIComponent(
+    "Name: " + (f.name.value || "") + "\n" +
+    "Email: " + (f.email.value || "") + "\n" +
+    ((f.phone.value || "").trim() ? ("Phone: " + f.phone.value + "\n") : "") +
+    "Subject: " + (f.subject.value || "") + "\n" +
+    "Level: " + (f.level.value || "") + "\n" +
+    "Year group: " + (f.year.value || "") + "\n\n" +
+    "Message:\n" + (f.message.value || "") + "\n"
+  );
 
-  const lines = [];
-  if(f.name && f.name.value) lines.push("Name: " + f.name.value);
-  lines.push("Email: " + (f.email.value || ""));
-  if(f.phone && f.phone.value) lines.push("Phone: " + f.phone.value);
-  lines.push("Subject: " + chosenSubject);
-  if(chosenLevel) lines.push("Level: " + chosenLevel);
-  if(f.year && f.year.value) lines.push("Year group: " + f.year.value);
-  lines.push("");
-  if(f.message && f.message.value) lines.push("Message:\n" + f.message.value);
-
-  const body = encodeURIComponent(lines.join("\n"));
   window.location.href = "mailto:ben@skenningseducation.com?subject=" + subject + "&body=" + body;
   return false;
 }
-</script>
-
+  </script>
 </body>
 </html>
