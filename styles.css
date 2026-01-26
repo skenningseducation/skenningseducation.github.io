@@ -256,3 +256,5 @@ textarea{min-height:120px;resize:vertical}
   .burger{display:inline-flex}
   .mobile-panel.show{display:block}
 }
+
+.logo-img{width:34px;height:34px;border-radius:10px;object-fit:contain;box-shadow:var(--shadow);background:rgba(255,255,255,.06)}
