@@ -3,7 +3,6 @@
   /* ============================
      Mobile menu toggle
      ============================ */
-
   const burger = document.querySelector('[data-burger]');
   const panel = document.querySelector('[data-mobile-panel]');
 
@@ -17,9 +16,7 @@
 
   /* ============================
      Enquiry form handler
-     Sends email via mailto:
      ============================ */
-
   const forms = document.querySelectorAll('form[data-enquiry-form]');
 
   forms.forEach(form => {
@@ -28,27 +25,34 @@
 
       const f = e.target;
 
-      const subject = encodeURIComponent(
-        "New enquiry — " +
-        (f.subject?.value || "") + " " +
-        (f.level?.value || "") +
-        (f.year?.value ? (" (Year " + f.year.value + ")") : "")
+      const name    = f.name?.value || "Not provided";
+      const email   = f.email?.value || "Not provided";
+      const phone   = f.phone?.value || "Not provided";
+      const subject = f.subject?.value || "Not specified";
+      const level   = f.level?.value || "Not specified";
+      const year    = f.year?.value || "Not specified";
+      const message = f.message?.value || "No message provided";
+
+      const emailSubject = encodeURIComponent(
+        "New enquiry – " + subject + " " + level
       );
 
-      const body = encodeURIComponent(
-        "Name: " + (f.name?.value || "") + "\n" +
-        "Email: " + (f.email?.value || "") + "\n" +
-        (f.phone?.value ? "Phone: " + f.phone.value + "\n" : "") +
-        "Subject: " + (f.subject?.value || "") + "\n" +
-        "Level: " + (f.level?.value || "") + "\n" +
-        "Year group: " + (f.year?.value || "") + "\n\n" +
-        "Message:\n" + (f.message?.value || "")
+      const emailBody = encodeURIComponent(
+        "New enquiry received from the Skennings Education website\n\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Phone: " + phone + "\n" +
+        "Subject: " + subject + "\n" +
+        "Level: " + level + "\n" +
+        "Year group: " + year + "\n\n" +
+        "Message:\n" +
+        message
       );
 
       window.location.href =
         "mailto:ben@skenningseducation.com" +
-        "?subject=" + subject +
-        "&body=" + body;
+        "?subject=" + emailSubject +
+        "&body=" + emailBody;
     });
   });
 

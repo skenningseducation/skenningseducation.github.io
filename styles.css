@@ -257,4 +257,14 @@ textarea{min-height:120px;resize:vertical}
   .mobile-panel.show{display:block}
 }
 
-.logo-img{width:34px;height:34px;border-radius:10px;object-fit:contain;box-shadow:var(--shadow);background:rgba(255,255,255,.06)}
+.logo-img{
+  height:34px;
+  width:auto;
+  max-width:34px;
+  object-fit:contain;
+  border-radius:8px;
+  box-shadow: var(--shadow);
+  background: transparent;
+  display:block;
+}
+
