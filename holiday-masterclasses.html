@@ -4,63 +4,21 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Holiday masterclasses | Skennings Education</title>
-  <meta name="description" content="Holiday masterclasses for GCSE/iGCSE and A Level: Computer Science, Maths and English. 2 hours a day Mon–Fri focusing on key topics and exam technique."/>
-  <style>
-:root{--bg:#0b1220;--panel:#0f1a2e;--text:#e8eefc;--muted:#b7c3dd;--brand:#6aa7ff;--brand2:#8bffcc;--line:rgba(255,255,255,.12);--shadow:0 10px 30px rgba(0,0,0,.35);--radius:18px;--maxw:1100px}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#070b14 0%, #0b1220 40%, #070b14 100%);color:var(--text)}
-a{color:inherit}
-.container{max-width:var(--maxw);margin:0 auto;padding:0 18px}
-.nav{position:sticky;top:0;z-index:20;background:rgba(7,11,20,.78);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:0 10px 30px rgba(0,0,0,.35)}
-.brand strong{font-size:15px;letter-spacing:.2px}
-.brand span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
-.menu{display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:flex-end}
-.menu a{font-size:13px;text-decoration:none;color:var(--muted);padding:8px 10px;border-radius:12px;border:1px solid transparent}
-.menu a:hover{color:var(--text);border-color:var(--line);background:rgba(255,255,255,.04)}
-.menu .cta{color:#071018;background:linear-gradient(135deg,var(--brand2),var(--brand));border:0;font-weight:650}
-.hero{padding:54px 0 22px}
-.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:stretch}
-@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.menu{justify-content:flex-start}}
-.card{background:rgba(15,26,46,.82);border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
-.card.pad{padding:22px}
-h1{font-size:38px;margin:0 0 12px}
-.lead{color:var(--muted);line-height:1.6;margin:0 0 16px}
-.list{margin:0;padding-left:18px;color:var(--muted);line-height:1.7}
-.hr{height:1px;background:var(--line);margin:16px 0}
-.small{font-size:12px;color:var(--muted);line-height:1.6}
-.notice{padding:12px 14px;border-radius:16px;border:1px solid var(--line);background:rgba(106,167,255,.08);color:var(--muted)}
-.input{width:100%;margin-top:8px;padding:10px 12px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text);outline:none}
-.input::placeholder{color:rgba(183,195,221,.75)}
-textarea.input{min-height:110px;resize:vertical}
-.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-.btn{display:inline-block;text-decoration:none;padding:10px 12px;border-radius:14px;border:1px solid var(--line);color:var(--text);font-weight:650;font-size:13px;background:rgba(255,255,255,.03)}
-.btn:hover{background:rgba(255,255,255,.06)}
-.btn.primary{border:0;color:#071018;background:linear-gradient(135deg,var(--brand2),var(--brand))}
-.footer{padding:26px 0 42px;border-top:1px solid var(--line);margin-top:30px}
-.footer-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:14px}
-@media (max-width:900px){.footer-grid{grid-template-columns:1fr}}
-.footer a{color:var(--muted);text-decoration:none}
-.footer a:hover{color:var(--text)}
-.table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:16px;border:1px solid var(--line)}
-.table th,.table td{padding:12px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-.table th{background:rgba(255,255,255,.04);text-align:left;font-size:13px;color:var(--muted);font-weight:700}
-.table td{color:var(--muted);font-size:13px;line-height:1.5}
-.table tr:last-child td{border-bottom:0}
-  </style>
+  <meta name="description" content="Holiday masterclasses: focused GCSE/iGCSE and A Level sessions in Computer Science, Maths and English to improve exam performance."/>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="index.html">
-        
+        <img src="images/logo.png" alt="Skennings Education logo" class="logo-img">
         <div>
           <strong>Skennings Education</strong>
-          <span>GCSE/iGCSE + A Level</span>
+          <span>Online teaching (GCSE/iGCSE + A Level)</span>
         </div>
       </a>
+
       <nav class="menu" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="subjects.html">Subjects</a>
@@ -75,69 +33,92 @@ textarea.input{min-height:110px;resize:vertical}
   <section class="hero">
     <div class="container hero-grid">
 
+      <!-- MAIN -->
       <div class="card pad">
         <h1>Holiday masterclasses</h1>
         <p class="lead">
-          Intensive holiday programmes designed to strengthen key curriculum areas and exam technique.
-          Delivered as <strong>2 hours per day, Monday to Friday</strong>.
+          Intensive short courses that run <strong>Monday–Friday</strong>, <strong>2 hours per day</strong>.
+          Designed to strengthen key curriculum areas and sharpen exam technique quickly.
         </p>
 
-        <div class="notice">
-          <strong>Format:</strong> 2 hours/day (Mon–Fri) · Small groups · Exam technique focus · Homework/practice tasks included.
-          <br><br>
-          <strong>Subjects:</strong> Computer Science, Maths, English (and English Language at A Level).
+        <div class="badges">
+          <span class="badge">2 hours/day (Mon–Fri)</span>
+          <span class="badge">Small groups (max 10)</span>
+          <span class="badge">GCSE/iGCSE + A Level</span>
         </div>
 
         <div class="hr"></div>
 
-        <h2 style="margin:0 0 10px">What we focus on</h2>
+        <div class="notice">
+          <strong>Best for:</strong> students who want a focused boost during half-terms/holidays,
+          targeted help on weak topics, or structured exam-practice momentum.
+        </div>
+
+        <div class="hr"></div>
+
+        <h2 style="margin:0 0 10px">How the week works</h2>
         <ul class="list">
-          <li>High-impact topics that drive marks quickly</li>
-          <li>Exam question technique and mark-scheme thinking</li>
-          <li>Targeted practice with feedback</li>
-          <li>Confidence under time pressure</li>
+          <li><strong>Day 1:</strong> baseline check + key method/knowledge reminders</li>
+          <li><strong>Days 2–4:</strong> targeted teaching + guided practice + exam-style questions</li>
+          <li><strong>Day 5:</strong> timed mini-paper + feedback + revision plan</li>
+          <li><strong>Resources included:</strong> notes/worksheets and exam-style practice (Word/PDF)</li>
         </ul>
 
         <div class="hr"></div>
 
-        <h2 style="margin:0 0 10px">Pricing (typical)</h2>
+        <h2 style="margin:0 0 10px">Topics available</h2>
+        <p class="small">We choose a focus based on what the student needs most and what gains marks fastest.</p>
+        <ul class="list">
+          <li><strong>Computer Science:</strong> programming practice (Python), algorithms, data representation, networks, security, exam technique</li>
+          <li><strong>Maths:</strong> algebra, geometry, number/ratio, graphs, problem solving, exam timing</li>
+          <li><strong>English:</strong> reading analysis, writing improvement, structure, exam responses, timing</li>
+          <li><strong>English Language (A Level):</strong> language analysis, framework application, writing and exam technique</li>
+        </ul>
+
+        <div class="hr"></div>
+
+        <h2 style="margin:0 0 10px">Pricing</h2>
         <p class="small">
-          Pricing depends on level and group size. As a realistic UK benchmark for small-group specialist teaching,
-          holiday intensives are commonly priced in the range of:
+          Holiday masterclasses are an additional cost. As a typical UK market range for small-group specialist holiday tuition,
+          a reasonable price point is:
         </p>
 
         <table class="table" aria-label="Holiday masterclass pricing">
           <thead>
             <tr>
-              <th>Level</th>
-              <th>Schedule</th>
-              <th>Typical price range (per week)</th>
+              <th>Option</th>
+              <th>What it includes</th>
+              <th>Typical price</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>GCSE/iGCSE</td>
-              <td>2 hours/day · Mon–Fri</td>
-              <td>£150 – £300</td>
+              <td><strong>5-day masterclass</strong></td>
+              <td>10 hours live teaching (2 hours/day), resources, exam-style practice, end-of-week feedback</td>
+              <td><strong>£149–£249 per student</strong></td>
             </tr>
             <tr>
-              <td>A Level</td>
-              <td>2 hours/day · Mon–Fri</td>
-              <td>£200 – £350</td>
+              <td><strong>Single day</strong></td>
+              <td>2-hour focused session (topic-based)</td>
+              <td><strong>£35–£55 per student</strong></td>
             </tr>
           </tbody>
         </table>
 
-        <p class="small" style="margin-top:12px">
-          Exact pricing and available weeks are shared by enquiry (so we can match the right group and focus areas).
+        <p class="small" style="margin-top:10px">
+          Final pricing depends on subject, level, and class size. Availability varies by holiday period.
         </p>
 
+        <div class="hr"></div>
+
         <div class="btnrow">
-          <a class="btn" href="subjects.html">View subjects</a>
-          <a class="btn" href="prices.html">See term-time prices</a>
+          <a class="btn" href="subjects.html">Back to subjects</a>
+          <a class="btn" href="prices.html">View main course prices</a>
+          <a class="btn primary" href="how-it-works.html">How it works</a>
         </div>
       </div>
 
+      <!-- SIDEBAR -->
       <div class="card pad">
         <h2 style="margin-top:0">Contact</h2>
         <p class="small">
@@ -148,7 +129,13 @@ textarea.input{min-height:110px;resize:vertical}
         <div class="hr"></div>
 
         <h3 style="margin:0 0 8px">Quick enquiry</h3>
-        <form onsubmit="return sendContactEmail(event)">
+
+        <form id="contact-form" action="https://formspree.io/f/mreqkrze" method="POST">
+          <div style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden" aria-hidden="true">
+            <label>Leave this field empty</label>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
           <input class="input" name="name" placeholder="Parent/Guardian name" required>
           <input class="input" name="email" placeholder="Email address" type="email" required>
           <input class="input" name="phone" placeholder="Phone (optional)">
@@ -158,7 +145,8 @@ textarea.input{min-height:110px;resize:vertical}
             <option>Computer Science</option>
             <option>Maths</option>
             <option>English</option>
-            <option>English Language (A Level)</option>
+            <option>English Language</option>
+            <option selected>Holiday masterclass</option>
           </select>
 
           <select class="input" name="level" required>
@@ -169,13 +157,27 @@ textarea.input{min-height:110px;resize:vertical}
 
           <input class="input" name="year" placeholder="Year group (e.g., 10, 11, 12, 13)" required>
 
-          <textarea class="input" name="message" placeholder="Which holiday week(s) are you interested in, and what topics should we focus on?" required></textarea>
+          <textarea class="input" name="message" placeholder="Which holiday period? Which topic(s)? Any exam board info?..." required></textarea>
+
+          <label class="small" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px">
+            <input type="checkbox" name="gdpr_consent" required style="margin-top:3px">
+            <span>I consent to Skennings Education storing and processing the information in this form in order to respond to my enquiry.</span>
+          </label>
+
+          <input type="hidden" name="_subject" value="New enquiry – Skennings Education (Holiday masterclasses)">
+          <input type="hidden" name="_template" value="table">
 
           <div class="btnrow">
-            <button class="btn primary" type="submit">Send enquiry</button>
+            <button class="btn primary" type="submit" id="contact-submit">Send enquiry</button>
           </div>
 
-          <p class="small" style="margin-top:10px">This opens your email app with the message pre-filled.</p>
+          <p class="small" id="form-success" style="display:none;color:var(--brand2);margin-top:10px">
+            Thank you — your message has been sent successfully.
+          </p>
+          <p class="small" id="form-error" style="display:none;color:#ffb4b4;margin-top:10px">
+            Sorry — something went wrong. Please try again, or email us directly at
+            <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>.
+          </p>
         </form>
       </div>
 
@@ -186,7 +188,7 @@ textarea.input{min-height:110px;resize:vertical}
     <div class="container footer-grid">
       <div>
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-          
+          <img src="images/logo.png" alt="Skennings Education logo" class="logo-img">
           <div>
             <div style="font-weight:800">Skennings Education</div>
             <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
@@ -205,31 +207,5 @@ textarea.input{min-height:110px;resize:vertical}
       </div>
     </div>
   </footer>
-
-  <script>
-function sendContactEmail(e){
-  e.preventDefault();
-  const f = e.target;
-
-  const subject = encodeURIComponent(
-    "Holiday masterclass enquiry — " + (f.subject?.value || "") + " " + (f.level?.value || "") + (f.year?.value ? (" (Year " + f.year.value + ")") : "")
-  );
-
-  const body = encodeURIComponent(
-    "Name: " + (f.name.value || "") + "\n" +
-    "Email: " + (f.email.value || "") + "\n" +
-    ((f.phone.value || "").trim() ? ("Phone: " + f.phone.value + "\n") : "") +
-    "Subject: " + (f.subject.value || "") + "\n" +
-    "Level: " + (f.level.value || "") + "\n" +
-    "Year group: " + (f.year.value || "") + "\n\n" +
-    "Message:\n" + (f.message.value || "") + "\n"
-  );
-
-  window.location.href = "mailto:ben@skenningseducation.com?subject=" + subject + "&body=" + body;
-  return false;
-}
-  </script>
 </body>
 </html>
-
-
