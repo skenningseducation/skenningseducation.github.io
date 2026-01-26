@@ -4,252 +4,227 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>A Level Maths | Skennings Education</title>
-  <meta name="description" content="A Level Maths teaching with small groups, exam technique, structured resources, and regular practice."/>
-  <style>
-/* same CSS as gcse-maths.html */
-:root{--bg:#0b1220;--panel:#0f1a2e;--text:#e8eefc;--muted:#b7c3dd;--brand:#6aa7ff;--brand2:#8bffcc;--line:rgba(255,255,255,.12);--shadow:0 10px 30px rgba(0,0,0,.35);--radius:18px;--maxw:1100px}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#070b14 0%, #0b1220 40%, #070b14 100%);color:var(--text)}
-a{color:inherit}
-.container{max-width:var(--maxw);margin:0 auto;padding:0 18px}
-.nav{position:sticky;top:0;z-index:20;background:rgba(7,11,20,.78);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:var(--shadow)}
-.brand strong{font-size:15px;letter-spacing:.2px}
-.brand span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
-.menu{display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:flex-end}
-.menu a{font-size:13px;text-decoration:none;color:var(--muted);padding:8px 10px;border-radius:12px;border:1px solid transparent}
-.menu a:hover{color:var(--text);border-color:var(--line);background:rgba(255,255,255,.04)}
-.menu .cta{color:#071018;background:linear-gradient(135deg,var(--brand2),var(--brand));border:0;font-weight:650}
-.menu .cta:hover{filter:brightness(1.05)}
-.hero{padding:54px 0 22px}
-.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:stretch}
-@media (max-width: 880px){.hero-grid{grid-template-columns:1fr}.menu{justify-content:flex-start}}
-.card{background:rgba(15,26,46,.82);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
-.card.pad{padding:22px}
-h1{font-size:40px;line-height:1.08;margin:0 0 12px}
-@media (max-width: 520px){h1{font-size:32px}}
-.lead{color:var(--muted);font-size:16px;line-height:1.6;margin:0 0 18px}
-.hr{height:1px;background:var(--line);margin:16px 0}
-.small{font-size:12px;color:var(--muted);line-height:1.6}
-.list{margin:0;padding-left:18px;color:var(--muted);line-height:1.7}
-.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-.btn{display:inline-block;text-decoration:none;padding:10px 12px;border-radius:14px;border:1px solid var(--line);color:var(--text);font-weight:650;font-size:13px;background:rgba(255,255,255,.03)}
-.btn:hover{background:rgba(255,255,255,.06)}
-.btn.primary{border:0;color:#071018;background:linear-gradient(135deg,var(--brand2),var(--brand))}
-.notice{padding:12px 14px;border-radius:16px;border:1px solid var(--line);background:rgba(106,167,255,.08);color:var(--muted)}
-.table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:16px;border:1px solid var(--line)}
-.table th,.table td{padding:12px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-.table th{background:rgba(255,255,255,.04);text-align:left;font-size:13px;color:var(--muted);font-weight:700}
-.table td{color:var(--muted);font-size:13px;line-height:1.5}
-.table tr:last-child td{border-bottom:0}
-.input{width:100%;margin-top:8px;padding:10px 12px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text);outline:none}
-.input::placeholder{color:rgba(183,195,221,.75)}
-textarea.input{min-height:110px;resize:vertical}
-.footer{padding:26px 0 42px;border-top:1px solid var(--line);margin-top:30px}
-.footer-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:14px}
-@media (max-width: 900px){.footer-grid{grid-template-columns:1fr}}
-.footer a{color:var(--muted);text-decoration:none}
-.footer a:hover{color:var(--text)}
-  </style>
+  <meta name="description" content="A Level Maths taught online in small groups. Clear teaching, practice, and exam technique."/>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html">
-        
-        <div>
-          <strong>Skennings Education</strong>
-          <span>GCSE/iGCSE + A Level</span>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Skennings Education logo" class="logo-img">
+      <div>
+        <strong>Skennings Education</strong>
+        <span>GCSE/iGCSE + A Level</span>
+      </div>
+    </a>
+    <nav class="menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="subjects.html" class="active">Subjects</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="prices.html" class="cta">Prices</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="holiday-masterclasses.html">Holiday masterclasses</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div class="card pad">
+      <h1>A Level Maths</h1>
+      <p class="lead">
+        A structured A Level Maths programme focused on clear methods, problem solving, and exam technique.
+        Suitable as supplementary support or as a complete teaching pathway.
+      </p>
+
+      <div class="notice">
+        <strong>Included from Day 1:</strong> full lesson notes (Word/PDF), exam-style questions with worked answers,
+        and access to past papers. <strong>Maximum class size: 10 students.</strong>
+      </div>
+
+      <div class="hr"></div>
+
+      <h2 style="margin:0 0 10px">What we focus on</h2>
+      <ul class="list">
+        <li>Pure Maths fluency: algebra, calculus, trigonometry and proof-style reasoning</li>
+        <li>Applied Maths (where relevant): mechanics and/or statistics</li>
+        <li>Exam technique: structure, accuracy, and timing</li>
+        <li>Building confidence on multi-step, higher-mark problems</li>
+      </ul>
+
+      <div class="hr"></div>
+
+      <h2>How lessons run</h2>
+      <div class="split">
+        <div class="card pad" style="background:rgba(255,255,255,.03)">
+          <h3 style="margin-top:0">Weekly live teaching</h3>
+          <ul class="list">
+            <li>Clear explanation + worked examples</li>
+            <li>Guided practice and method selection</li>
+            <li>Checks for understanding throughout</li>
+            <li>Exam-style questions regularly</li>
+          </ul>
         </div>
-      </a>
-      <nav class="menu" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="subjects.html" style="color: var(--text); border-color: var(--line); background: rgba(255,255,255,.04)">Subjects</a>
-        <a href="how-it-works.html">How it works</a>
-        <a href="prices.html" class="cta">Prices</a>
-        <a href="faqs.html">FAQs</a>
-        <a href="holiday-masterclasses.html">Holiday masterclasses</a>
-      </nav>
+        <div class="card pad" style="background:rgba(255,255,255,.03)">
+          <h3 style="margin-top:0">Homework + feedback</h3>
+          <ul class="list">
+            <li>Weekly practice to consolidate learning</li>
+            <li>Corrections and model solutions</li>
+            <li>Targeted improvement based on weak areas</li>
+            <li>Timed practice near exam season</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <h2>Typical 30-week overview (support programme)</h2>
+      <p class="small">The exact order varies by exam board and class needs, while ensuring complete coverage.</p>
+
+      <table class="table" aria-label="30-week A Level Maths overview">
+        <thead>
+          <tr>
+            <th>Weeks</th>
+            <th>Focus</th>
+            <th>Outcome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1–6</td>
+            <td>Core algebra and functions, foundational problem solving</td>
+            <td>Stronger fluency and fewer errors on core methods</td>
+          </tr>
+          <tr>
+            <td>7–12</td>
+            <td>Trigonometry and sequences/series + exam-style application</td>
+            <td>More confident multi-step solutions</td>
+          </tr>
+          <tr>
+            <td>13–18</td>
+            <td>Calculus focus: differentiation, integration, modelling</td>
+            <td>Reliable calculus methods and clear working</td>
+          </tr>
+          <tr>
+            <td>19–24</td>
+            <td>Applied content (statistics/mechanics) + mixed problem solving</td>
+            <td>Better interpretation and application under pressure</td>
+          </tr>
+          <tr>
+            <td>25–27</td>
+            <td>Higher-mark topics and common exam patterns</td>
+            <td>Improved performance on challenging questions</td>
+          </tr>
+          <tr>
+            <td>28–30</td>
+            <td>Exam phase: timed papers + targeted improvement</td>
+            <td>Timing confidence and consistent exam marks</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="hr"></div>
+
+      <div class="btnrow">
+        <a class="btn" href="subjects.html">Back to subjects</a>
+        <a class="btn primary" href="prices.html">View prices</a>
+      </div>
     </div>
-  </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
+    <aside class="card pad">
+      <h2 style="margin-top:0">Contact</h2>
+      <p class="small">
+        Phone: <a href="tel:07405664243">07405664243</a><br/>
+        Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
+      </p>
 
-      <div class="card pad">
-        <h1>A Level Maths</h1>
-        <p class="lead">
-          A structured A Level Maths programme for Years 12–13, built around fluency, reasoning, and exam technique.
-          Suitable as supplementary support or as a complete teaching pathway.
-        </p>
+      <div class="hr"></div>
 
-        <div class="notice">
-          <strong>Included from Day 1:</strong> lesson notes (Word/PDF), exam-style questions with worked solutions, and access to past papers
-          for the student’s exam board. <strong>Maximum class size: 10 students.</strong>
-        </div>
+      <h3 style="margin:0 0 8px">Quick enquiry</h3>
+      <form onsubmit="return sendContactEmail(event)">
+        <input class="input" name="name" placeholder="Name (optional)">
+        <input class="input" name="email" placeholder="Email address *" type="email" required>
+        <input class="input" name="phone" placeholder="Phone (optional)">
 
-        <div class="hr"></div>
+        <select class="input" name="subject">
+          <option>Maths</option>
+          <option>Computer Science</option>
+          <option>English</option>
+          <option>English Language</option>
+        </select>
 
-        <h2 style="margin:0 0 10px">What we focus on</h2>
-        <ul class="list">
-          <li>Strong algebra and calculus foundations</li>
-          <li>Clear, efficient problem-solving methods</li>
-          <li>Exam technique and mark allocation awareness</li>
-          <li>Regular mixed practice to improve retrieval and speed</li>
-        </ul>
+        <select class="input" name="level">
+          <option>A Level</option>
+          <option>GCSE/iGCSE</option>
+        </select>
 
-        <div class="hr"></div>
-
-        <h2 style="margin:0 0 10px">Typical 30-week outline (support programme)</h2>
-        <p class="small">Exact sequence depends on the student’s specification (and whether they do Mechanics or Statistics).</p>
-
-        <table class="table" aria-label="A Level Maths outline">
-          <thead>
-            <tr>
-              <th>Weeks</th>
-              <th>Main topics</th>
-              <th>Exam focus</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1–6</td>
-              <td>Algebra & functions: indices/logs, quadratics, graphs, transformations, composite/inverse</td>
-              <td>Method selection, accuracy and presentation</td>
-            </tr>
-            <tr>
-              <td>7–12</td>
-              <td>Calculus: differentiation + applications, integration basics</td>
-              <td>Interpretation questions, modelling</td>
-            </tr>
-            <tr>
-              <td>13–18</td>
-              <td>Trigonometry & exponentials: identities, equations, radians, trig graphs</td>
-              <td>Proof/justify style responses</td>
-            </tr>
-            <tr>
-              <td>19–24</td>
-              <td>Year 13 core: harder integration, sequences/series, numerical methods (spec dependent)</td>
-              <td>Multi-step questions, structure under pressure</td>
-            </tr>
-            <tr>
-              <td>25–27</td>
-              <td>Applied (Mechanics/Statistics): key models and high-frequency exam topics</td>
-              <td>Interpreting context, clear working, units</td>
-            </tr>
-            <tr>
-              <td>28–30</td>
-              <td>Exam phase: timed papers, targeted weak-area rebuilds, mixed-topic drills</td>
-              <td>Timing, exam strategy, mark scheme habits</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="hr"></div>
-
-        <h2 style="margin:0 0 10px">Who this is for</h2>
-        <ul class="list">
-          <li><strong>Supplementary students:</strong> weekly support to stay on track and improve grades.</li>
-          <li><strong>Main provision students:</strong> complete teaching pathway with structured notes and exam practice.</li>
-        </ul>
+        <input class="input" name="year" placeholder="Year group (optional)">
+        <textarea class="input" name="message" placeholder="What does the student need help with? (Exam board if known)"></textarea>
 
         <div class="btnrow">
-          <a class="btn" href="subjects.html">Back to subjects</a>
-          <a class="btn" href="prices.html">View prices</a>
+          <button class="btn primary" type="submit">Send enquiry</button>
+        </div>
+
+        <p class="small" style="margin-top:10px">This opens your email app with the message pre-filled.</p>
+      </form>
+    </aside>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+        <img src="images/logo.png" alt="Skennings Education logo" class="logo-img">
+        <div>
+          <div style="font-weight:800">Skennings Education</div>
+          <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
         </div>
       </div>
-
-      <div class="card pad">
-        <h2 style="margin-top:0">Contact</h2>
-        <p class="small">
-          Phone: <a href="tel:07405664243">07405664243</a><br>
-          Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
-        </p>
-
-        <div class="hr"></div>
-
-        <h3 style="margin:0 0 8px">Quick enquiry</h3>
-        <form onsubmit="return sendContactEmail(event)">
-          <input class="input" name="name" placeholder="Parent/Guardian name" required>
-          <input class="input" name="email" placeholder="Email address" type="email" required>
-          <input class="input" name="phone" placeholder="Phone (optional)">
-
-          <select class="input" name="subject" required>
-            <option value="">Subject</option>
-            <option>Maths</option>
-            <option>Computer Science</option>
-            <option>English</option>
-            <option>English Language (A Level)</option>
-          </select>
-
-          <select class="input" name="level" required>
-            <option value="">Level</option>
-            <option>GCSE/iGCSE</option>
-            <option>A Level</option>
-          </select>
-
-          <input class="input" name="year" placeholder="Year group (e.g., 12 or 13)" required>
-
-          <textarea class="input" name="message" placeholder="Tell us what the student needs help with (spec/board if known, and whether Mechanics or Statistics)..." required></textarea>
-
-          <div class="btnrow">
-            <button class="btn primary" type="submit">Send enquiry</button>
-          </div>
-
-          <p class="small" style="margin-top:10px">This opens your email app with the message pre-filled.</p>
-        </form>
-      </div>
-
+      <div class="small">Phone: <a href="tel:07405664243">07405664243</a> · Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a></div>
+      <div class="small" style="margin-top:8px">© 2026 Skennings Education. All rights reserved.</div>
     </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-          
-          <div>
-            <div style="font-weight:800">Skennings Education</div>
-            <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
-          </div>
-        </div>
-        <div class="small">Phone: <a href="tel:07405664243">07405664243</a> · Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a></div>
-        <div class="small" style="margin-top:8px">© 2026 Skennings Education. All rights reserved.</div>
-      </div>
-      <div>
-        <div class="small" style="font-weight:800;margin-bottom:8px">Quick links</div>
-        <div class="small" style="display:flex;flex-direction:column;gap:6px">
-          <a href="subjects.html">Subjects</a>
-          <a href="how-it-works.html">How it works</a>
-          <a href="prices.html">Prices</a>
-        </div>
+    <div>
+      <div class="small" style="font-weight:800;margin-bottom:8px">Quick links</div>
+      <div class="small" style="display:flex;flex-direction:column;gap:6px">
+        <a href="subjects.html">Subjects</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="prices.html">Prices</a>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script>
+<script>
 function sendContactEmail(e){
   e.preventDefault();
   const f = e.target;
-  const subject = encodeURIComponent(
-    "Enquiry — " + (f.subject?.value || "") + " " + (f.level?.value || "") + (f.year?.value ? (" (Year " + f.year.value + ")") : "")
-  );
-  const body = encodeURIComponent(
-    "Name: " + (f.name.value || "") + "\n" +
-    "Email: " + (f.email.value || "") + "\n" +
-    ((f.phone.value || "").trim() ? ("Phone: " + f.phone.value + "\n") : "") +
-    "Subject: " + (f.subject.value || "") + "\n" +
-    "Level: " + (f.level.value || "") + "\n" +
-    "Year group: " + (f.year.value || "") + "\n\n" +
-    "Message:\n" + (f.message.value || "") + "\n"
-  );
+
+  const chosenSubject = (f.subject && f.subject.value) ? f.subject.value : "Enquiry";
+  const chosenLevel = (f.level && f.level.value) ? f.level.value : "";
+  const yearTxt = (f.year && f.year.value) ? (" (Year " + f.year.value + ")") : "";
+
+  const subject = encodeURIComponent("Enquiry — " + chosenSubject + " " + chosenLevel + yearTxt);
+
+  const lines = [];
+  if(f.name && f.name.value) lines.push("Name: " + f.name.value);
+  lines.push("Email: " + (f.email.value || ""));
+  if(f.phone && f.phone.value) lines.push("Phone: " + f.phone.value);
+  lines.push("Subject: " + chosenSubject);
+  if(chosenLevel) lines.push("Level: " + chosenLevel);
+  if(f.year && f.year.value) lines.push("Year group: " + f.year.value);
+  lines.push("");
+  if(f.message && f.message.value) lines.push("Message:\n" + f.message.value);
+
+  const body = encodeURIComponent(lines.join("\n"));
   window.location.href = "mailto:ben@skenningseducation.com?subject=" + subject + "&body=" + body;
   return false;
 }
-  </script>
+</script>
+
 </body>
 </html>
-
-

@@ -4,357 +4,227 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>A Level English Language | Skennings Education</title>
-  <meta name="description" content="A Level English Language taught online in small groups. Clear teaching, exam technique, structured notes, and regular marked practice."/>
-  <style>
-:root{
-  --bg:#0b1220;
-  --panel:#0f1a2e;
-  --text:#e8eefc;
-  --muted:#b7c3dd;
-  --brand:#6aa7ff;
-  --brand2:#8bffcc;
-  --line:rgba(255,255,255,.12);
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
-  --radius:18px;
-  --maxw:1100px;
-}
-*{box-sizing:border-box}
-html,body{
-  margin:0;padding:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  background:linear-gradient(180deg,#070b14 0%, #0b1220 40%, #070b14 100%);
-  color:var(--text)
-}
-a{color:inherit}
-.container{max-width:var(--maxw);margin:0 auto;padding:0 18px}
-.nav{position:sticky;top:0;z-index:20;background:rgba(7,11,20,.78);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:var(--shadow)}
-.brand strong{font-size:15px;letter-spacing:.2px}
-.brand span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
-.menu{display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:flex-end}
-.menu a{font-size:13px;text-decoration:none;color:var(--muted);padding:8px 10px;border-radius:12px;border:1px solid transparent}
-.menu a:hover{color:var(--text);border-color:var(--line);background:rgba(255,255,255,.04)}
-.menu .cta{color:#071018;background:linear-gradient(135deg,var(--brand2),var(--brand));border:0;font-weight:650}
-.menu .cta:hover{filter:brightness(1.05)}
-.hero{padding:54px 0 22px}
-.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:stretch}
-@media (max-width: 880px){.hero-grid{grid-template-columns:1fr}.menu{justify-content:flex-start}}
-.card{background:rgba(15,26,46,.82);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
-.card.pad{padding:22px}
-h1{font-size:40px;line-height:1.08;margin:0 0 12px}
-@media (max-width: 520px){h1{font-size:32px}}
-h2{margin:0 0 10px;font-size:22px}
-h3{margin:0 0 8px;font-size:16px}
-.lead{color:var(--muted);font-size:16px;line-height:1.6;margin:0 0 18px}
-.badges{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 0}
-.badge{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:rgba(255,255,255,.03)}
-.section{padding:20px 0}
-.section p{margin:0 0 14px;color:var(--muted);line-height:1.65}
-.list{margin:0;padding-left:18px;color:var(--muted);line-height:1.7}
-.hr{height:1px;background:var(--line);margin:16px 0}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media (max-width: 900px){.split{grid-template-columns:1fr}}
-.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-.btn{display:inline-block;text-decoration:none;padding:10px 12px;border-radius:14px;border:1px solid var(--line);color:var(--text);font-weight:650;font-size:13px;background:rgba(255,255,255,.03)}
-.btn:hover{background:rgba(255,255,255,.06)}
-.btn.primary{border:0;color:#071018;background:linear-gradient(135deg,var(--brand2),var(--brand))}
-.small{font-size:12px;color:var(--muted);line-height:1.6}
-.notice{padding:12px 14px;border-radius:16px;border:1px solid var(--line);background:rgba(106,167,255,.08);color:var(--muted)}
-.table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:16px;border:1px solid var(--line)}
-.table th,.table td{padding:12px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-.table th{background:rgba(255,255,255,.04);text-align:left;font-size:13px;color:var(--muted);font-weight:700}
-.table td{color:var(--muted);font-size:13px;line-height:1.5}
-.table tr:last-child td{border-bottom:0}
-.input{width:100%;margin-top:8px;padding:10px 12px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text);outline:none}
-.input::placeholder{color:rgba(183,195,221,.75)}
-textarea.input{min-height:110px;resize:vertical}
-.footer{padding:26px 0 42px;border-top:1px solid var(--line);margin-top:30px}
-.footer-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:14px}
-@media (max-width: 900px){.footer-grid{grid-template-columns:1fr}}
-.footer a{color:var(--muted);text-decoration:none}
-.footer a:hover{color:var(--text)}
-  </style>
+  <meta name="description" content="A Level English Language taught online in small groups. Analysis, writing, and exam technique."/>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html">
-        
-        <div>
-          <strong>Skennings Education</strong>
-          <span>GCSE/iGCSE + A Level</span>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Skennings Education logo" class="logo-img">
+      <div>
+        <strong>Skennings Education</strong>
+        <span>GCSE/iGCSE + A Level</span>
+      </div>
+    </a>
+    <nav class="menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="subjects.html" class="active">Subjects</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="prices.html" class="cta">Prices</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="holiday-masterclasses.html">Holiday masterclasses</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div class="card pad">
+      <h1>A Level English Language</h1>
+      <p class="lead">
+        A structured A Level English Language programme focused on analysis, clear writing, and exam technique.
+        Suitable as supplementary support or as a complete pathway.
+      </p>
+
+      <div class="notice">
+        <strong>Included from Day 1:</strong> full lesson notes (Word/PDF), exam-style questions with worked answers,
+        and access to past papers. <strong>Maximum class size: 10 students.</strong>
+      </div>
+
+      <div class="hr"></div>
+
+      <h2 style="margin:0 0 10px">What we focus on</h2>
+      <ul class="list">
+        <li>Accurate analysis using appropriate terminology</li>
+        <li>Evidence-led writing with clear structure</li>
+        <li>Comparative responses and evaluation skills</li>
+        <li>Exam technique: planning, timing, and targeting the assessment objectives</li>
+      </ul>
+
+      <div class="hr"></div>
+
+      <h2>How lessons run</h2>
+      <div class="split">
+        <div class="card pad" style="background:rgba(255,255,255,.03)">
+          <h3 style="margin-top:0">Weekly live teaching</h3>
+          <ul class="list">
+            <li>Explicit modelling of high-mark responses</li>
+            <li>Guided annotation and planning routines</li>
+            <li>Targeted practice during the lesson</li>
+            <li>Regular checks for understanding</li>
+          </ul>
         </div>
-      </a>
-      <nav class="menu" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="subjects.html" style="color: var(--text); border-color: var(--line); background: rgba(255,255,255,.04)">Subjects</a>
-        <a href="how-it-works.html">How it works</a>
-        <a href="prices.html" class="cta">Prices</a>
-        <a href="faqs.html">FAQs</a>
-        <a href="holiday-masterclasses.html">Holiday masterclasses</a>
-      </nav>
+        <div class="card pad" style="background:rgba(255,255,255,.03)">
+          <h3 style="margin-top:0">Homework + feedback</h3>
+          <ul class="list">
+            <li>Weekly practice (short + extended)</li>
+            <li>Mark-scheme focused feedback</li>
+            <li>Redraft guidance to improve quickly</li>
+            <li>Timed exam practice throughout</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <h2>Typical 30-week overview (support programme)</h2>
+      <p class="small">Adapted to the exam board and class pace, while keeping full coverage and exam readiness.</p>
+
+      <table class="table" aria-label="30-week A Level English Language overview">
+        <thead>
+          <tr>
+            <th>Weeks</th>
+            <th>Focus</th>
+            <th>Outcome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1–6</td>
+            <td>Foundations of analysis + core terminology</td>
+            <td>Accurate annotation and clearer, structured paragraphs</td>
+          </tr>
+          <tr>
+            <td>7–12</td>
+            <td>Comparative analysis and viewpoints</td>
+            <td>Confident comparison technique and stronger evaluation</td>
+          </tr>
+          <tr>
+            <td>13–18</td>
+            <td>Language, identity, and representation themes</td>
+            <td>Better argument building and AO-targeted responses</td>
+          </tr>
+          <tr>
+            <td>19–24</td>
+            <td>Variation and data response skills</td>
+            <td>More confident handling of datasets and evidence-led writing</td>
+          </tr>
+          <tr>
+            <td>25–27</td>
+            <td>Long-form responses and independent planning</td>
+            <td>Faster planning and improved control under timing</td>
+          </tr>
+          <tr>
+            <td>28–30</td>
+            <td>Exam phase: timed papers + targeted improvement</td>
+            <td>Timing strategy, exam confidence, final polish</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="hr"></div>
+
+      <div class="btnrow">
+        <a class="btn" href="subjects.html">Back to subjects</a>
+        <a class="btn primary" href="prices.html">View prices</a>
+      </div>
     </div>
-  </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
+    <aside class="card pad">
+      <h2 style="margin-top:0">Contact</h2>
+      <p class="small">
+        Phone: <a href="tel:07405664243">07405664243</a><br/>
+        Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
+      </p>
 
-      <!-- MAIN -->
-      <div class="card pad">
-        <h1>A Level English Language</h1>
-        <p class="lead">
-          Live, teacher-led lessons designed to build confident analysis and high-scoring exam responses.
-          Suitable as <strong>supplementary support</strong> alongside school or as a <strong>main provision</strong> pathway.
-        </p>
+      <div class="hr"></div>
 
-        <div class="badges">
-          <span class="badge">Maximum class size: 10</span>
-          <span class="badge">Essay + data response technique</span>
-          <span class="badge">Regular marked exam practice</span>
-        </div>
+      <h3 style="margin:0 0 8px">Quick enquiry</h3>
+      <form onsubmit="return sendContactEmail(event)">
+        <input class="input" name="name" placeholder="Name (optional)">
+        <input class="input" name="email" placeholder="Email address *" type="email" required>
+        <input class="input" name="phone" placeholder="Phone (optional)">
 
-        <div class="hr"></div>
+        <select class="input" name="subject">
+          <option>English Language</option>
+          <option>English</option>
+          <option>Maths</option>
+          <option>Computer Science</option>
+        </select>
 
-        <div class="notice">
-          <strong>Day 1 resources included:</strong> a complete set of lesson notes (Word/PDF), guided exam-style practice with model answers,
-          and access to past papers for the student’s exam board.
-        </div>
+        <select class="input" name="level">
+          <option>A Level</option>
+          <option>GCSE/iGCSE</option>
+        </select>
 
-        <div class="hr"></div>
+        <input class="input" name="year" placeholder="Year group (optional)">
+        <textarea class="input" name="message" placeholder="What does the student need help with? (Exam board if known)"></textarea>
 
-        <h2>What students will be able to do</h2>
-        <ul class="list">
-          <li>Analyse spoken, written and multimodal texts accurately using appropriate terminology.</li>
-          <li>Write exam responses that meet assessment objectives: analysis, interpretation, structure and precision.</li>
-          <li>Handle data-driven questions (language variation, identity, change) and build well-supported arguments.</li>
-          <li>Plan and execute longer responses efficiently under timed conditions.</li>
-        </ul>
-
-        <div class="hr"></div>
-
-        <h2>How lessons run</h2>
-        <div class="split">
-          <div class="card pad" style="background:rgba(255,255,255,.03)">
-            <h3 style="margin-top:0">Weekly live teaching</h3>
-            <ul class="list">
-              <li>Clear explanation + worked examples</li>
-              <li>Guided annotation and modelling</li>
-              <li>Targeted practice during the lesson</li>
-              <li>Frequent checks for understanding</li>
-            </ul>
-          </div>
-          <div class="card pad" style="background:rgba(255,255,255,.03)">
-            <h3 style="margin-top:0">Homework + feedback</h3>
-            <ul class="list">
-              <li>Weekly practice tasks (short + extended)</li>
-              <li>Mark-scheme focused feedback</li>
-              <li>Redraft guidance so mistakes don’t repeat</li>
-              <li>Timed exam question practice throughout</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="hr"></div>
-
-        <h2>Curriculum overview</h2>
-        <p>
-          English Language A Level varies slightly across exam boards, but the core skills and knowledge areas overlap strongly.
-          The programme is delivered in a way that works across the main UK exam boards, with clear signposting for board-specific requirements.
-        </p>
-
-        <table class="table" aria-label="A Level English Language curriculum overview">
-          <thead>
-            <tr>
-              <th>Area</th>
-              <th>Focus</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Text analysis</td>
-              <td>How to analyse language choices, structure, register, audience, purpose, and representation in written/spoken texts.</td>
-            </tr>
-            <tr>
-              <td>Language frameworks</td>
-              <td>Core terminology and methods for analysing lexis, grammar, semantics, pragmatics, discourse, and phonology (as required).</td>
-            </tr>
-            <tr>
-              <td>Language and identity / society</td>
-              <td>How language reflects identity, power, occupation, gender, age, region; evaluating viewpoints using evidence.</td>
-            </tr>
-            <tr>
-              <td>Language variation and change</td>
-              <td>Key concepts and how to handle data: comparing texts, explaining differences, interpreting patterns and trends.</td>
-            </tr>
-            <tr>
-              <td>Writing skills</td>
-              <td>How to craft high-mark responses: introduction, thesis, paragraph structure, evidence selection, evaluation, and conclusions.</td>
-            </tr>
-            <tr>
-              <td>Exam technique</td>
-              <td>Timing, planning, question decoding, meeting assessment objectives, and avoiding common pitfalls.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="hr"></div>
-
-        <h2>36-week outline</h2>
-        <p class="small">A practical week-by-week plan (adapted to the student’s exam board and class pace).</p>
-
-        <table class="table" aria-label="36-week outline">
-          <thead>
-            <tr>
-              <th>Weeks</th>
-              <th>Focus</th>
-              <th>Typical outcomes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1–6</td>
-              <td>Foundations of analysis + core terminology</td>
-              <td>Confident annotation; accurate terminology; structured paragraphs using evidence.</td>
-            </tr>
-            <tr>
-              <td>7–12</td>
-              <td>Comparative analysis (two texts / viewpoints)</td>
-              <td>Comparison techniques; clear argument; well-chosen quotations; stronger evaluation.</td>
-            </tr>
-            <tr>
-              <td>13–18</td>
-              <td>Language & identity / representation</td>
-              <td>Analysing how language constructs identity; linking to context and purpose; stronger conclusions.</td>
-            </tr>
-            <tr>
-              <td>19–24</td>
-              <td>Variation + data response skills</td>
-              <td>Handling datasets; interpreting patterns; writing evidence-led explanations and evaluations.</td>
-            </tr>
-            <tr>
-              <td>25–30</td>
-              <td>Long-form responses + independent planning</td>
-              <td>Faster planning; stronger structure; improved coherence and precision under timed conditions.</td>
-            </tr>
-            <tr>
-              <td>31–36</td>
-              <td>Revision + exam mastery</td>
-              <td>Timed papers; examiner-style marking; personalised improvement targets and final polish.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="hr"></div>
-
-        <h2>Next step</h2>
-        <p>
-          If you tell us the student’s exam board (and current confidence level), we’ll recommend the best-fit group.
-        </p>
         <div class="btnrow">
-          <a class="btn primary" href="prices.html">View prices</a>
-          <a class="btn" href="how-it-works.html">How it works</a>
-          <a class="btn" href="subjects.html">Back to subjects</a>
+          <button class="btn primary" type="submit">Send enquiry</button>
+        </div>
+
+        <p class="small" style="margin-top:10px">This opens your email app with the message pre-filled.</p>
+      </form>
+    </aside>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+        <img src="images/logo.png" alt="Skennings Education logo" class="logo-img">
+        <div>
+          <div style="font-weight:800">Skennings Education</div>
+          <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
         </div>
       </div>
-
-      <!-- RIGHT SIDEBAR -->
-      <div class="card pad">
-        <h2 style="margin-top:0">Contact</h2>
-        <p class="small">
-          Phone: <a href="tel:07405664243">07405664243</a><br>
-          Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
-        </p>
-
-        <div class="hr"></div>
-
-        <h3 style="margin:0 0 8px">Quick enquiry</h3>
-        <form onsubmit="return sendContactEmail(event)">
-          <input class="input" name="name" placeholder="Parent/Guardian name" required>
-          <input class="input" name="email" placeholder="Email address" type="email" required>
-          <input class="input" name="phone" placeholder="Phone (optional)">
-
-          <select class="input" name="subject" required>
-            <option value="">Subject</option>
-            <option>English Language</option>
-            <option>Maths</option>
-            <option>Computer Science</option>
-          </select>
-
-          <select class="input" name="level" required>
-            <option value="">Level</option>
-            <option>A Level</option>
-            <option>GCSE/iGCSE</option>
-          </select>
-
-          <input class="input" name="year" placeholder="Year group (e.g., 12 or 13)" required>
-
-          <textarea class="input" name="message" placeholder="Tell us what the student needs help with (and exam board if known)..." required></textarea>
-
-          <div class="btnrow">
-            <button class="btn primary" type="submit">Send enquiry</button>
-          </div>
-
-          <p class="small" style="margin-top:10px">This opens your email app with the message pre-filled.</p>
-        </form>
-
-        <div class="hr"></div>
-
-        <p class="small">
-          <strong>Good fit if the student:</strong><br>
-          Wants clearer structure, stronger analysis, and exam responses that reliably gain marks.
-        </p>
-      </div>
-
+      <div class="small">Phone: <a href="tel:07405664243">07405664243</a> · Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a></div>
+      <div class="small" style="margin-top:8px">© 2026 Skennings Education. All rights reserved.</div>
     </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-          
-          <div>
-            <div style="font-weight:800">Skennings Education</div>
-            <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
-          </div>
-        </div>
-        <div class="small">Phone: <a href="tel:07405664243">07405664243</a> · Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a></div>
-        <div class="small" style="margin-top:8px">© 2026 Skennings Education. All rights reserved.</div>
-      </div>
-      <div>
-        <div class="small" style="font-weight:800;margin-bottom:8px">Quick links</div>
-        <div class="small" style="display:flex;flex-direction:column;gap:6px">
-          <a href="subjects.html">Subjects</a>
-          <a href="how-it-works.html">How it works</a>
-          <a href="prices.html">Prices</a>
-        </div>
+    <div>
+      <div class="small" style="font-weight:800;margin-bottom:8px">Quick links</div>
+      <div class="small" style="display:flex;flex-direction:column;gap:6px">
+        <a href="subjects.html">Subjects</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="prices.html">Prices</a>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script>
+<script>
 function sendContactEmail(e){
   e.preventDefault();
   const f = e.target;
-  const subject = encodeURIComponent(
-    "Enquiry — " + (f.subject?.value || "English Language") + " " + (f.level?.value || "A Level") + (f.year?.value ? (" (Year " + f.year.value + ")") : "")
-  );
-  const body = encodeURIComponent(
-    "Name: " + (f.name.value || "") + "\n" +
-    "Email: " + (f.email.value || "") + "\n" +
-    ((f.phone.value || "").trim() ? ("Phone: " + f.phone.value + "\n") : "") +
-    "Subject: " + (f.subject.value || "") + "\n" +
-    "Level: " + (f.level.value || "") + "\n" +
-    "Year group: " + (f.year.value || "") + "\n\n" +
-    "Message:\n" + (f.message.value || "") + "\n"
-  );
+
+  const chosenSubject = (f.subject && f.subject.value) ? f.subject.value : "Enquiry";
+  const chosenLevel = (f.level && f.level.value) ? f.level.value : "";
+  const yearTxt = (f.year && f.year.value) ? (" (Year " + f.year.value + ")") : "";
+
+  const subject = encodeURIComponent("Enquiry — " + chosenSubject + " " + chosenLevel + yearTxt);
+
+  const lines = [];
+  if(f.name && f.name.value) lines.push("Name: " + f.name.value);
+  lines.push("Email: " + (f.email.value || ""));
+  if(f.phone && f.phone.value) lines.push("Phone: " + f.phone.value);
+  lines.push("Subject: " + chosenSubject);
+  if(chosenLevel) lines.push("Level: " + chosenLevel);
+  if(f.year && f.year.value) lines.push("Year group: " + f.year.value);
+  lines.push("");
+  if(f.message && f.message.value) lines.push("Message:\n" + f.message.value);
+
+  const body = encodeURIComponent(lines.join("\n"));
   window.location.href = "mailto:ben@skenningseducation.com?subject=" + subject + "&body=" + body;
   return false;
 }
-  </script>
+</script>
+
 </body>
 </html>
-
-
