@@ -199,3 +199,54 @@ textarea.input{min-height:110px;resize:vertical}
 @media (max-width:900px){.footer-grid{grid-template-columns:1fr}}
 .footer a{color:var(--muted)}
 .footer a:hover{color:var(--text)}
+
+/* --- FORCE NAV MENU TO MATCH THE "PILL" STYLE --- */
+.nav{
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(7,11,20,.78);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:14px 0;
+}
+.menu{
+  display:flex !important;
+  gap:14px !important;
+  flex-wrap:wrap !important;
+  align-items:center !important;
+  justify-content:flex-end !important;
+}
+.menu a{
+  font-size:13px !important;
+  text-decoration:none !important;
+  color:var(--muted) !important;
+  padding:8px 10px !important;
+  border-radius:12px !important;
+  border:1px solid transparent !important;
+}
+.menu a:hover{
+  color:var(--text) !important;
+  border-color:var(--line) !important;
+  background:rgba(255,255,255,.04) !important;
+}
+.menu a.active{
+  color:var(--text) !important;
+  border-color:var(--line) !important;
+  background:rgba(255,255,255,.04) !important;
+}
+.menu a.cta{
+  color:#071018 !important;
+  background:linear-gradient(135deg,var(--brand2),var(--brand)) !important;
+  border:0 !important;
+  font-weight:650 !important;
+}
+.menu a.cta:hover{filter:brightness(1.05) !important;}
+/* --- END FORCE NAV MENU --- */
+
