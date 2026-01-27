@@ -1,5 +1,16 @@
 (function () {
 
+  // Ensure styles.css is loaded (helps when injecting fragments)
+  if (!document.querySelector('link[href="styles.css"]')) {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "styles.css";
+    document.head.appendChild(link);
+  }
+
+  async function injectEnquiryForms() {
+    // ... keep your existing code
+
   async function injectEnquiryForms() {
     const targets = document.querySelectorAll('[data-enquiry-form]');
     if (!targets.length) return;
