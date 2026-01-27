@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Skennings Education | Online GCSE/iGCSE & A Level tutoring</title>
+  <meta name="description" content="Online teaching for GCSE/iGCSE and A Level: Computer Science, Maths, and English. Small groups, exam technique, structured resources."/>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      
+      <div>
+        <strong>Skennings Education</strong>
+        <span>Online teaching (GCSE/iGCSE + A Level)</span>
+      </div>
+    </a>
+
+    <nav class="menu" aria-label="Primary">
+      <a href="index.html" style="color:var(--text);border-color:var(--line);background:rgba(255,255,255,.04)">Home</a>
+      <a href="subjects.html">Subjects</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="prices.html" class="cta">Prices</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="holiday-masterclasses.html">Holiday masterclasses</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+
+    <!-- MAIN CONTENT -->
+    <div class="card pad">
+      <h1>Small-group GCSE/iGCSE & A Level teaching that builds exam confidence</h1>
+
+      <p class="lead">
+        Live, teacher-led lessons in <strong>Computer Science</strong>, <strong>Maths</strong> and <strong>English</strong>.
+        Ideal for students who want extra support alongside school <em>or</em> students using this as their main provision.
+      </p>
+
+      <div class="btnrow">
+        <a class="btn primary" href="subjects.html">Explore subjects</a>
+        <a class="btn" href="how-it-works.html">How it works</a>
+        <a class="btn" href="prices.html">View prices</a>
+      </div>
+
+      <div class="badges">
+        <span class="badge">Maximum class size: 10</span>
+        <span class="badge">Exam technique + feedback</span>
+        <span class="badge">GCSE/iGCSE + A Level</span>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="notice">
+        <strong>Day 1 resources included:</strong>
+        full lesson notes (Word/PDF), exam-style questions with worked answers,
+        and access to past papers for the student’s exam board.
+      </div>
+    </div>
+
+    <!-- CONTACT / FORM -->
+    <div class="card pad">
+      <h2 style="margin-top:0">Contact</h2>
+      <p class="small">
+        Phone: <a href="tel:07405664243">07405664243</a><br>
+        Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
+      </p>
+
+      <div class="hr"></div>
+
+      <h3 style="margin:0 0 8px">Quick enquiry</h3>
+
+      <form id="contact-form" action="https://formspree.io/f/mreqkrze" method="POST">
+
+        <!-- Honeypot -->
+        <div style="position:absolute;left:-9999px">
+          <label>Leave this field empty</label>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+
+        <input class="input" name="name" placeholder="Parent/Guardian name" required>
+        <input class="input" name="email" type="email" placeholder="Email address" required>
+        <input class="input" name="phone" placeholder="Phone (optional)">
+
+        <select class="input" name="subject" required>
+          <option value="">Subject</option>
+          <option>Computer Science</option>
+          <option>Maths</option>
+          <option>English</option>
+          <option>English Language</option>
+        </select>
+
+        <select class="input" name="level" required>
+          <option value="">Level</option>
+          <option>GCSE/iGCSE</option>
+          <option>A Level</option>
+        </select>
+
+        <input class="input" name="year" placeholder="Year group (e.g. 10, 11, 12, 13)" required>
+
+        <textarea class="input" name="message" placeholder="Tell us what the student needs help with (exam board if known)..." required></textarea>
+
+        <label class="small" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px">
+          <input type="checkbox" name="gdpr_consent" required style="margin-top:3px">
+          <span>
+            I consent to Skennings Education storing and processing this information in order to respond to my enquiry.
+          </span>
+        </label>
+
+        <!-- Formspree helpers -->
+        <input type="hidden" name="_subject" value="New enquiry – Skennings Education">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="btnrow">
+          <button class="btn primary" type="submit">Send enquiry</button>
+        </div>
+
+        <p class="small" id="form-success" style="display:none;color:var(--brand2);margin-top:10px">
+          Thank you — your message has been sent successfully.
+        </p>
+        <p class="small" id="form-error" style="display:none;color:#ffb4b4;margin-top:10px">
+          Something went wrong. Please try again or email us directly.
+        </p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid3">
+    <div class="card kpi">
+      <h3>Small classes</h3>
+      <p>Maximum 10 students per class for real interaction and feedback.</p>
+    </div>
+    <div class="card kpi">
+      <h3>Built for exams</h3>
+      <p>Exam-style questions and mark-scheme thinking throughout.</p>
+    </div>
+    <div class="card kpi">
+      <h3>Confidence & results</h3>
+      <p>Clear explanations, structured practice, and steady progress.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+        
+        <div>
+          <div style="font-weight:800">Skennings Education</div>
+          <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
+        </div>
+      </div>
+      <div class="small">
+        Phone: <a href="tel:07405664243">07405664243</a> ·
+        Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
+      </div>
+      <div class="small" style="margin-top:8px">
+        © 2026 Skennings Education. All rights reserved.
+      </div>
+    </div>
+
+    <div>
+      <div class="small" style="font-weight:800;margin-bottom:8px">Quick links</div>
+      <div class="small" style="display:flex;flex-direction:column;gap:6px">
+        <a href="subjects.html">Subjects</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="prices.html">Prices</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+

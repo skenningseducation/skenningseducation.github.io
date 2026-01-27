@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Holiday masterclasses | Skennings Education</title>
+  <meta name="description" content="Holiday masterclasses: focused GCSE/iGCSE and A Level sessions in Computer Science, Maths and English to improve exam performance."/>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        
+        <div>
+          <strong>Skennings Education</strong>
+          <span>Online teaching (GCSE/iGCSE + A Level)</span>
+        </div>
+      </a>
+
+      <nav class="menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="prices.html" class="cta">Prices</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="holiday-masterclasses.html" style="color: var(--text); border-color: var(--line); background: rgba(255,255,255,.04)">Holiday masterclasses</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <!-- MAIN -->
+      <div class="card pad">
+        <h1>Holiday masterclasses</h1>
+        <p class="lead">
+          Intensive short courses that run <strong>Monday–Friday</strong>, <strong>2 hours per day</strong>.
+          Designed to strengthen key curriculum areas and sharpen exam technique quickly.
+        </p>
+
+        <div class="badges">
+          <span class="badge">2 hours/day (Mon–Fri)</span>
+          <span class="badge">Small groups (max 10)</span>
+          <span class="badge">GCSE/iGCSE + A Level</span>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="notice">
+          <strong>Best for:</strong> students who want a focused boost during half-terms/holidays,
+          targeted help on weak topics, or structured exam-practice momentum.
+        </div>
+
+        <div class="hr"></div>
+
+        <h2 style="margin:0 0 10px">How the week works</h2>
+        <ul class="list">
+          <li><strong>Day 1:</strong> baseline check + key method/knowledge reminders</li>
+          <li><strong>Days 2–4:</strong> targeted teaching + guided practice + exam-style questions</li>
+          <li><strong>Day 5:</strong> timed mini-paper + feedback + revision plan</li>
+          <li><strong>Resources included:</strong> notes/worksheets and exam-style practice (Word/PDF)</li>
+        </ul>
+
+        <div class="hr"></div>
+
+        <h2 style="margin:0 0 10px">Topics available</h2>
+        <p class="small">We choose a focus based on what the student needs most and what gains marks fastest.</p>
+        <ul class="list">
+          <li><strong>Computer Science:</strong> programming practice (Python), algorithms, data representation, networks, security, exam technique</li>
+          <li><strong>Maths:</strong> algebra, geometry, number/ratio, graphs, problem solving, exam timing</li>
+          <li><strong>English:</strong> reading analysis, writing improvement, structure, exam responses, timing</li>
+          <li><strong>English Language (A Level):</strong> language analysis, framework application, writing and exam technique</li>
+        </ul>
+
+        <div class="hr"></div>
+
+        <h2 style="margin:0 0 10px">Pricing</h2>
+        <p class="small">
+          Holiday masterclasses are an additional cost. As a typical UK market range for small-group specialist holiday tuition,
+          a reasonable price point is:
+        </p>
+
+        <table class="table" aria-label="Holiday masterclass pricing">
+          <thead>
+            <tr>
+              <th>Option</th>
+              <th>What it includes</th>
+              <th>Typical price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>5-day masterclass</strong></td>
+              <td>10 hours live teaching (2 hours/day), resources, exam-style practice, end-of-week feedback</td>
+              <td><strong>£149–£249 per student</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Single day</strong></td>
+              <td>2-hour focused session (topic-based)</td>
+              <td><strong>£35–£55 per student</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="small" style="margin-top:10px">
+          Final pricing depends on subject, level, and class size. Availability varies by holiday period.
+        </p>
+
+        <div class="hr"></div>
+
+        <div class="btnrow">
+          <a class="btn" href="subjects.html">Back to subjects</a>
+          <a class="btn" href="prices.html">View main course prices</a>
+          <a class="btn primary" href="how-it-works.html">How it works</a>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="card pad">
+        <h2 style="margin-top:0">Contact</h2>
+        <p class="small">
+          Phone: <a href="tel:07405664243">07405664243</a><br>
+          Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
+        </p>
+
+        <div class="hr"></div>
+
+        <h3 style="margin:0 0 8px">Quick enquiry</h3>
+
+        <form id="contact-form" action="https://formspree.io/f/mreqkrze" method="POST">
+
+        <!-- Honeypot -->
+        <div style="position:absolute;left:-9999px">
+          <label>Leave this field empty</label>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+
+        <input class="input" name="name" placeholder="Parent/Guardian name" required>
+        <input class="input" name="email" type="email" placeholder="Email address" required>
+        <input class="input" name="phone" placeholder="Phone (optional)">
+
+        <select class="input" name="subject" required>
+          <option value="">Subject</option>
+          <option>Computer Science</option>
+          <option>Maths</option>
+          <option>English</option>
+          <option>English Language</option>
+        </select>
+
+        <select class="input" name="level" required>
+          <option value="">Level</option>
+          <option>GCSE/iGCSE</option>
+          <option>A Level</option>
+        </select>
+
+        <input class="input" name="year" placeholder="Year group (e.g. 10, 11, 12, 13)" required>
+
+        <textarea class="input" name="message" placeholder="Tell us what the student needs help with (exam board if known)..." required></textarea>
+
+        <label class="small" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px">
+          <input type="checkbox" name="gdpr_consent" required style="margin-top:3px">
+          <span>
+            I consent to Skennings Education storing and processing this information in order to respond to my enquiry.
+          </span>
+        </label>
+
+        <!-- Formspree helpers -->
+        <input type="hidden" name="_subject" value="New enquiry – Skennings Education">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="btnrow">
+          <button class="btn primary" type="submit">Send enquiry</button>
+        </div>
+
+        <p class="small" id="form-success" style="display:none;color:var(--brand2);margin-top:10px">
+          Thank you — your message has been sent successfully.
+        </p>
+        <p class="small" id="form-error" style="display:none;color:#ffb4b4;margin-top:10px">
+          Something went wrong. Please try again or email us directly.
+        </p>
+      </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+          
+          <div>
+            <div style="font-weight:800">Skennings Education</div>
+            <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
+          </div>
+        </div>
+        <div class="small">Phone: <a href="tel:07405664243">07405664243</a> · Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a></div>
+        <div class="small" style="margin-top:8px">© 2026 Skennings Education. All rights reserved.</div>
+      </div>
+      <div>
+        <div class="small" style="font-weight:800;margin-bottom:8px">Quick links</div>
+        <div class="small" style="display:flex;flex-direction:column;gap:6px">
+          <a href="subjects.html">Subjects</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="prices.html">Prices</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+

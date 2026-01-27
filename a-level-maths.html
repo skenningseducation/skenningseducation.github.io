@@ -181,58 +181,7 @@ textarea.input{min-height:110px;resize:vertical}
 
         <h3 style="margin:0 0 8px">Quick enquiry</h3>
 
-        <form id="contact-form" action="https://formspree.io/f/mreqkrze" method="POST">
-
-        <!-- Honeypot -->
-        <div style="position:absolute;left:-9999px">
-          <label>Leave this field empty</label>
-          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
-        </div>
-
-        <input class="input" name="name" placeholder="Parent/Guardian name" required>
-        <input class="input" name="email" type="email" placeholder="Email address" required>
-        <input class="input" name="phone" placeholder="Phone (optional)">
-
-        <select class="input" name="subject" required>
-          <option value="">Subject</option>
-          <option>Computer Science</option>
-          <option>Maths</option>
-          <option>English</option>
-          <option>English Language</option>
-        </select>
-
-        <select class="input" name="level" required>
-          <option value="">Level</option>
-          <option>GCSE/iGCSE</option>
-          <option>A Level</option>
-        </select>
-
-        <input class="input" name="year" placeholder="Year group (e.g. 10, 11, 12, 13)" required>
-
-        <textarea class="input" name="message" placeholder="Tell us what the student needs help with (exam board if known)..." required></textarea>
-
-        <label class="small" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px">
-          <input type="checkbox" name="gdpr_consent" required style="margin-top:3px">
-          <span>
-            I consent to Skennings Education storing and processing this information in order to respond to my enquiry.
-          </span>
-        </label>
-
-        <!-- Formspree helpers -->
-        <input type="hidden" name="_subject" value="New enquiry – Skennings Education">
-        <input type="hidden" name="_template" value="table">
-
-        <div class="btnrow">
-          <button class="btn primary" type="submit">Send enquiry</button>
-        </div>
-
-        <p class="small" id="form-success" style="display:none;color:var(--brand2);margin-top:10px">
-          Thank you — your message has been sent successfully.
-        </p>
-        <p class="small" id="form-error" style="display:none;color:#ffb4b4;margin-top:10px">
-          Something went wrong. Please try again or email us directly.
-        </p>
-      </form>
+        <div data-enquiry-form data-subject="New enquiry - Skennings Education (a-level-maths.html)"></div>
       </div>
 
     </div>
@@ -306,7 +255,11 @@ textarea.input{min-height:110px;resize:vertical}
   });
 })();
   </script>
+  <script defer src="main.js"></script>
 </body>
 </html>
+
+
+
 
 
