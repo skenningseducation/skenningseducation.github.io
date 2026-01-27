@@ -1,59 +1,47 @@
 (function () {
 
-  /* ============================
-     Mobile menu toggle
-     ============================ */
-  const burger = document.querySelector('[data-burger]');
-  const panel = document.querySelector('[data-mobile-panel]');
+  async function injectEnquiryForms() {
+    const targets = document.querySelectorAll('[data-enquiry-form]');
+    if (!targets.length) return;
 
-  if (burger && panel) {
-    burger.addEventListener('click', () => {
-      panel.classList.toggle('show');
-      const expanded = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!expanded));
-    });
-  }
+    // IMPORTANT: this resolves correctly on GitHub Pages + custom domains
+    const formUrl = new URL('enquiry-form.html', document.baseURI).toString();
 
-  /* ============================
-     Enquiry form handler
-     ============================ */
-  const forms = document.querySelectorAll('form[data-enquiry-form]');
+    let formHtml = "";
+    try {
+      const res = await fetch(formUrl, { cache: "no-cache" });
+      if (!res.ok) throw new Error("Failed to load enquiry-form.html");
+      formHtml = await res.text();
+    } catch (e) {
+      targets.forEach(t => {
+        t.innerHTML = `<p class="small">Form failed to load. Please email us directly.</p>`;
+      });
+      return;
+    }
 
-  forms.forEach(form => {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
+    targets.forEach((t, idx) => {
+      t.innerHTML = formHtml;
 
-      const f = e.target;
+      const form = t.querySelector("form");
+      if (!form) return;
 
-      const name    = f.name?.value || "Not provided";
-      const email   = f.email?.value || "Not provided";
-      const phone   = f.phone?.value || "Not provided";
-      const subject = f.subject?.value || "Not specified";
-      const level   = f.level?.value || "Not specified";
-      const year    = f.year?.value || "Not specified";
-      const message = f.message?.value || "No message provided";
+      // Unique IDs (in case a page has more than one)
+      form.id = `contact-form-${idx}`;
 
-      const emailSubject = encodeURIComponent(
-        "New enquiry – " + subject + " " + level
-      );
+      // Set the email subject from the placeholder attribute
+      const subjectFromDiv = t.getAttribute("data-subject") || "New enquiry – Skennings Education";
+      const subjInput = form.querySelector('input[name="_subject"]');
+      if (subjInput) subjInput.value = subjectFromDiv;
 
-      const emailBody = encodeURIComponent(
-        "New enquiry received from the Skennings Education website\n\n" +
-        "Name: " + name + "\n" +
-        "Email: " + email + "\n" +
-        "Phone: " + phone + "\n" +
-        "Subject: " + subject + "\n" +
-        "Level: " + level + "\n" +
-        "Year group: " + year + "\n\n" +
-        "Message:\n" +
-        message
-      );
+      // Make success/error unique too
+      const success = form.querySelector("#form-success");
+      const error = form.querySelector("#form-error");
+      const button = form.querySelector('button[type="submit"]');
+      if (success) success.id = `form-success-${idx}`;
+      if (error) error.id = `form-error-${idx}`;
 
-      window.location.href =
-        "mailto:ben@skenningseducation.com" +
-        "?subject=" + emailSubject +
-        "&body=" + emailBody;
-    });
-  });
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
 
-})();
+        const sEl = form.querySelector(`#form-success-${idx}`);
+        const eEl = form.querySelector(`#form-error-${idx}`);
