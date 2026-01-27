@@ -5,10 +5,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Subjects | Skennings Education</title>
   <meta name="description" content="Choose Computer Science, Maths or English for GCSE/iGCSE or A Level with small-group online teaching."/>
+
   <style>
-:root{--bg:#0b1220;--panel:#0f1a2e;--text:#e8eefc;--muted:#b7c3dd;--brand:#6aa7ff;--brand2:#8bffcc;--line:rgba(255,255,255,.12);--shadow:0 10px 30px rgba(0,0,0,.35);--radius:18px;--maxw:1100px}
+:root{
+  --bg:#0b1220;--panel:#0f1a2e;--text:#e8eefc;--muted:#b7c3dd;--brand:#6aa7ff;--brand2:#8bffcc;
+  --line:rgba(255,255,255,.12);--shadow:0 10px 30px rgba(0,0,0,.35);--radius:18px;--maxw:1100px;
+}
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#070b14 0%, #0b1220 40%, #070b14 100%);color:var(--text)}
+html,body{
+  margin:0;padding:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  background:linear-gradient(180deg,#070b14 0%, #0b1220 40%, #070b14 100%);
+  color:var(--text)
+}
 a{color:inherit}
 .container{max-width:var(--maxw);margin:0 auto;padding:0 18px}
 .nav{position:sticky;top:0;z-index:20;background:rgba(7,11,20,.78);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
@@ -20,13 +29,191 @@ a{color:inherit}
 .menu a{font-size:13px;text-decoration:none;color:var(--muted);padding:8px 10px;border-radius:12px;border:1px solid transparent}
 .menu a:hover{color:var(--text);border-color:var(--line);background:rgba(255,255,255,.04)}
 .menu .cta{color:#071018;background:linear-gradient(135deg,var(--brand2),var(--brand));border:0;font-weight:650}
+.menu .cta:hover{filter:brightness(1.05)}
 .hero{padding:54px 0 22px}
 .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:stretch}
-@media (max-width:880px){.hero-grid{grid-template-columns:1fr}.menu{justify-content:flex-start}}
-.card{background:rgba(15,26,46,.82);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+@media (max-width: 880px){.hero-grid{grid-template-columns:1fr}.menu{justify-content:flex-start}}
+.card{background:rgba(15,26,46,.82);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
 .card.pad{padding:22px}
+h1{font-size:40px;line-height:1.08;margin:0 0 12px}
+@media (max-width:520px){h1{font-size:32px}}
+.lead{color:var(--muted);font-size:16px;line-height:1.6;margin:0 0 18px}
+.small{font-size:12px;color:var(--muted);line-height:1.6}
+.hr{height:1px;background:var(--line);margin:16px 0}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 0}
+.badge{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:rgba(255,255,255,.03)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width: 700px){.grid2{grid-template-columns:1fr}}
+.subject-card{padding:16px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+.subject-card h3{margin:0 0 6px;font-size:16px}
+.subject-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.btn{display:inline-block;text-decoration:none;padding:10px 12px;border-radius:14px;border:1px solid var(--line);color:var(--text);font-weight:650;font-size:13px;background:rgba(255,255,255,.03)}
+.btn:hover{background:rgba(255,255,255,.06)}
+.btn.primary{border:0;color:#071018;background:linear-gradient(135deg,var(--brand2),var(--brand))}
+.notice{padding:12px 14px;border-radius:16px;border:1px solid var(--line);background:rgba(106,167,255,.08);color:var(--muted)}
+.footer{padding:26px 0 42px;border-top:1px solid var(--line);margin-top:30px}
+.footer-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:14px}
+@media (max-width:900px){.footer-grid{grid-template-columns:1fr}}
+.footer a{color:var(--muted);text-decoration:none}
+.footer a:hover{color:var(--text)}
+  </style>
+</head>
 
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div>
+          <strong>Skennings Education</strong>
+          <span>Online teaching (GCSE/iGCSE + A Level)</span>
+        </div>
+      </a>
 
+      <nav class="menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="subjects.html" style="color: var(--text); border-color: var(--line); background: rgba(255,255,255,.04)">Subjects</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="prices.html" class="cta">Prices</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="holiday-masterclasses.html">Holiday masterclasses</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <!-- MAIN -->
+      <div class="card pad">
+        <h1>Subjects</h1>
+        <p class="lead">
+          Choose <strong>Computer Science</strong>, <strong>Maths</strong>, or <strong>English</strong>.
+          We teach <strong>GCSE/iGCSE</strong> and <strong>A Level</strong> in small groups with strong emphasis on
+          <strong>exam technique</strong> and <strong>confident understanding</strong>.
+        </p>
+
+        <div class="badges">
+          <span class="badge">Maximum class size: 10</span>
+          <span class="badge">Structured notes (Word/PDF)</span>
+          <span class="badge">Exam-style questions + worked answers</span>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="notice">
+          <strong>Included from Day 1:</strong> full lesson notes (Word/PDF), exam-style questions with worked answers,
+          and access to past papers for the student’s exam board.
+        </div>
+
+        <div class="hr"></div>
+
+        <h2 style="margin:0 0 10px">GCSE/iGCSE</h2>
+        <div class="grid2">
+          <div class="subject-card">
+            <h3>Computer Science</h3>
+            <p>Programming, algorithms, data representation, networking, security and exam technique.</p>
+            <div class="btnrow">
+              <a class="btn primary" href="gcse-computer-science.html">View GCSE/iGCSE Computer Science</a>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <h3>Maths</h3>
+            <p>Core skills, problem solving, exam methods, and confidence-building practice.</p>
+            <div class="btnrow">
+              <a class="btn primary" href="gcse-maths.html">View GCSE/iGCSE Maths</a>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <h3>English</h3>
+            <p>Reading skills, writing structure, analysis, and exam technique to gain marks.</p>
+            <div class="btnrow">
+              <a class="btn primary" href="gcse-english.html">View GCSE/iGCSE English</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <h2 style="margin:0 0 10px">A Level</h2>
+        <div class="grid2">
+          <div class="subject-card">
+            <h3>Computer Science</h3>
+            <p>Programming depth, algorithms, theory, and exam technique. Suitable as supplementary or full provision.</p>
+            <div class="btnrow">
+              <a class="btn primary" href="a-level-computer-science.html">View A Level Computer Science</a>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <h3>Maths</h3>
+            <p>Pure + applied focus (Statistics/Mechanics as required), strong problem solving and exam performance.</p>
+            <div class="btnrow">
+              <a class="btn primary" href="a-level-maths.html">View A Level Maths</a>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <h3>English Language</h3>
+            <p>Language analysis, writing, and exam technique with clear structured practice.</p>
+            <div class="btnrow">
+              <a class="btn primary" href="a-level-english-language.html">View A Level English Language</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="btnrow">
+          <a class="btn" href="how-it-works.html">How it works</a>
+          <a class="btn primary" href="prices.html">View prices</a>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="card pad">
+        <h2 style="margin-top:0">Contact</h2>
+        <p class="small">
+          Phone: <a href="tel:07405664243">07405664243</a><br>
+          Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
+        </p>
+
+        <div class="hr"></div>
+
+        <h3 style="margin:0 0 8px">Quick enquiry</h3>
+
+        <!-- Single-source enquiry form injected by main.js -->
+        <div data-enquiry-form data-subject="New enquiry - Skennings Education (subjects.html)"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div style="font-weight:800">Skennings Education</div>
+        <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
+        <div class="small" style="margin-top:8px">
+          Phone: <a href="tel:07405664243">07405664243</a> ·
+          Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
+        </div>
+        <div class="small" style="margin-top:8px">© 2026 Skennings Education. All rights reserved.</div>
+      </div>
+      <div>
+        <div class="small" style="font-weight:800;margin-bottom:8px">Quick links</div>
+        <div class="small" style="display:flex;flex-direction:column;gap:6px">
+          <a href="subjects.html">Subjects</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="prices.html">Prices</a>
+          <a href="faqs.html">FAQs</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script defer src="main.js"></script>
-
+</body>
+</html>
