@@ -25,6 +25,47 @@ select.input {
   background-size: 6px 6px, 6px 6px;
   background-repeat: no-repeat;
 }
+/* ---------- FORM SELECT STYLING ---------- */
+
+select.input{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: rgba(15,26,46,.82);
+  color: var(--text);
+  cursor: pointer;
+
+  padding-right: 36px;
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 55%,
+    calc(100% - 12px) 55%;
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+}
+
+/* Dropdown list */
+select.input option{
+  background-color: var(--panel);
+  color: var(--text);
+}
+
+/* Hovered / selected option */
+select.input option:checked,
+select.input option:hover{
+  background-color: rgba(106,167,255,.15);
+  color: var(--text);
+}
+
+/* Placeholder option */
+select.input option[disabled]{
+  color: var(--muted);
+}
+
 
 *{box-sizing:border-box}
 html,body{
