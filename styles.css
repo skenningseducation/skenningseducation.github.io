@@ -115,6 +115,37 @@ a{color:inherit;text-decoration:none}
   .hero-grid{grid-template-columns:1fr}
   .menu{justify-content:flex-start}
 }
+/* HOME: 3 KPI cards in a row */
+.section { 
+  padding: 22px 0; 
+}
+
+.grid3{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.kpi{
+  padding: 18px;
+}
+
+.kpi h3{
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.kpi p{
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+@media (max-width: 900px){
+  .grid3{ grid-template-columns: 1fr; }
+}
+
 
 .card{
   background:rgba(15,26,46,.82);
