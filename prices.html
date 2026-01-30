@@ -4,10 +4,11 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Prices | Skennings Education</title>
-  <meta name="description" content="Transparent pricing for GCSE/iGCSE and A Level online teaching in Computer Science, Maths and English."/>
+  <meta name="description" content="Transparent pricing for small-group classes and private one-to-one tuition for GCSE/iGCSE and A Level."/>
   <link rel="stylesheet" href="styles.css">
   <script defer src="main.js?v=2"></script>
 </head>
+
 <body>
 
 <header class="nav">
@@ -20,14 +21,14 @@
     </a>
 
     <nav class="menu" aria-label="Primary">
-  <a href="index.html">Home</a>
-  <a href="subjects.html">Subjects</a>
-  <a href="how-it-works.html">How it works</a>
-  <a href="prices.html">Prices</a>
-  <a href="one-to-one.html">One-to-one</a>
-  <a href="for-schools.html">For schools</a>
-  <a href="faqs.html">FAQs</a>
-</nav>
+      <a href="index.html">Home</a>
+      <a href="subjects.html">Subjects</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="prices.html" class="is-active">Prices</a>
+      <a href="one-to-one.html">One-to-one</a>
+      <a href="for-schools.html">For schools</a>
+      <a href="faqs.html">FAQs</a>
+    </nav>
   </div>
 </header>
 
@@ -39,36 +40,37 @@
       <h1>Prices</h1>
 
       <p class="lead">
-        Simple, transparent pricing for small-group online teaching.
-        All courses include weekly <strong>90 min live lessons</strong>, structured resources, and exam-focused feedback.
-        <br><br>
-        <strong>Recordings of every lesson</strong> are shared after class with all enrolled students.
+        Simple, transparent pricing for online teaching.
+        Choose between <strong>small-group classes</strong> or
+        <strong>private one-to-one tuition</strong>.
       </p>
 
       <div class="hr"></div>
 
-      <h2 style="margin:0 0 10px">Weekly 90 min lessons</h2>
+      <!-- GROUP CLASSES -->
+      <h2 style="margin:0 0 10px">Small-group classes</h2>
       <p class="small">
-        Courses run for <strong>30 weeks</strong>: <strong>September → May</strong>.
+        Live, teacher-led classes with a maximum of 10 students.
+        Structured teaching, exam-focused practice, and lesson recordings included.
       </p>
 
-      <table class="table" aria-label="Weekly pricing table">
+      <table class="table" aria-label="Group class prices">
         <thead>
           <tr>
             <th>Level</th>
-            <th>Weekly fee (per student)</th>
-            <th>Lesson length</th>
+            <th>Price per class</th>
+            <th>Class length</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>GCSE / iGCSE</td>
-            <td><strong>£45 per week</strong></td>
+            <td><strong>£45 per class</strong></td>
             <td>90 minutes</td>
           </tr>
           <tr>
             <td>A Level</td>
-            <td><strong>£60 per week</strong></td>
+            <td><strong>£55 per class</strong></td>
             <td>90 minutes</td>
           </tr>
         </tbody>
@@ -76,33 +78,54 @@
 
       <div class="hr"></div>
 
-      <div class="notice">
-        <strong>Early payment discount:</strong>
-        Families who book and pay before <strong>1st Sept</strong> receive a
-        <strong>10% discount</strong> on the annual course fee.
-      </div>
+      <!-- ONE TO ONE -->
+      <h2 style="margin:0 0 10px">Private one-to-one tuition</h2>
+      <p class="small">
+        Fully personalised teaching tailored to the individual student.
+        Ideal for rapid progress, confidence building, or targeted exam preparation.
+      </p>
+
+      <table class="table" aria-label="One-to-one prices">
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Price per class</th>
+            <th>Lesson length</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GCSE / iGCSE</td>
+            <td><strong>£50 per class</strong></td>
+            <td>60 minutes</td>
+          </tr>
+          <tr>
+            <td>A Level</td>
+            <td><strong>£60 per class</strong></td>
+            <td>60 minutes</td>
+          </tr>
+        </tbody>
+      </table>
 
       <div class="hr"></div>
 
       <h2 style="margin:0 0 10px">What’s included</h2>
       <ul class="list">
-        <li>Weekly live, teacher-led <strong>90 min</strong> lessons</li>
-        <li>Maximum class size of <strong>10</strong> students</li>
-        <li>Complete lesson notes</li>
-        <li>Exam-style questions and worked answers</li>
-        <li>Past papers for the student’s exam board</li>
+        <li>Qualified, experienced teachers</li>
+        <li>Clear explanations and structured lessons</li>
+        <li>Exam-style questions and model answers</li>
+        <li>Exam-board-specific teaching</li>
+        <li>Lesson recordings shared after class (group classes)</li>
       </ul>
 
-      <div class="hr"></div>
-
       <div class="btnrow">
-        <a class="btn" href="subjects.html">Explore subjects</a>
-        <a class="btn" href="how-it-works.html">How lessons run</a>
+        <a class="btn" href="subjects.html">View subjects</a>
+        <a class="btn" href="one-to-one.html">Private 1:1</a>
         <a class="btn primary" href="contact.html">Enquire now</a>
       </div>
     </div>
 
-    <!-- CONTACT / FORM -->
+    <!-- SIDEBAR -->
     <div class="card pad">
       <h2 style="margin-top:0">Contact</h2>
       <p class="small">
@@ -113,8 +136,7 @@
       <div class="hr"></div>
 
       <h3 style="margin:0 0 8px">Quick enquiry</h3>
-
-      <div data-enquiry-form data-subject="New enquiry - Skennings Education (prices.html)"></div>
+      <div data-enquiry-form data-subject="New enquiry - Skennings Education (prices)"></div>
     </div>
 
   </div>
@@ -123,13 +145,9 @@
 <footer class="footer">
   <div class="container footer-grid">
     <div>
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-        <div>
-          <div style="font-weight:800">Skennings Education</div>
-          <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
-        </div>
-      </div>
-      <div class="small">
+      <div style="font-weight:800">Skennings Education</div>
+      <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
+      <div class="small" style="margin-top:8px">
         Phone: <a href="tel:07405664243">07405664243</a> ·
         Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
       </div>
@@ -143,6 +161,8 @@
       <div class="small" style="display:flex;flex-direction:column;gap:6px">
         <a href="subjects.html">Subjects</a>
         <a href="how-it-works.html">How it works</a>
+        <a href="one-to-one.html">One-to-one</a>
+        <a href="for-schools.html">For schools</a>
         <a href="faqs.html">FAQs</a>
       </div>
     </div>
@@ -151,6 +171,3 @@
 
 </body>
 </html>
-
-
-
