@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Subjects | Skennings Education</title>
-  <meta name="description" content="Choose Computer Science, Maths or English for GCSE/iGCSE or A Level with small-group online teaching."/>
+  <meta name="description" content="Choose Computer Science, Maths or English for GCSE/iGCSE or A Level with small-group online teaching or private 1:1 tuition."/>
 
   <style>
 :root{
@@ -38,29 +38,30 @@ a{color:inherit}
 h1{font-size:40px;line-height:1.08;margin:0 0 12px}
 @media (max-width:520px){h1{font-size:32px}}
 .lead{color:var(--muted);font-size:16px;line-height:1.6;margin:0 0 18px}
-.small{font-size:12px;color:var(--muted);line-height:1.6}
-.hr{height:1px;background:var(--line);margin:16px 0}
-.badges{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 0}
-.badge{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:rgba(255,255,255,.03)}
+.small{font-size:12px;color:var(--muted);line-height:1.6;margin:0}
+.hr{height:1px;background:var(--line);margin:18px 0}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 0}
+.badge{font-size:12px;padding:7px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:rgba(255,255,255,.03)}
+.notice{padding:12px 12px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--muted);line-height:1.55}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);text-decoration:none;font-size:13px;color:var(--text);background:rgba(255,255,255,.04)}
+.btn:hover{filter:brightness(1.05)}
+.btn.primary{border:0;color:#071018;background:linear-gradient(135deg,var(--brand2),var(--brand));font-weight:650}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media (max-width: 700px){.grid2{grid-template-columns:1fr}}
-.subject-card{padding:16px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+@media (max-width: 720px){.grid2{grid-template-columns:1fr}}
+.subject-card{padding:16px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.03)}
 .subject-card h3{margin:0 0 6px;font-size:16px}
 .subject-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}
-.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-.btn{display:inline-block;text-decoration:none;padding:10px 12px;border-radius:14px;border:1px solid var(--line);color:var(--text);font-weight:650;font-size:13px;background:rgba(255,255,255,.03)}
-.btn:hover{background:rgba(255,255,255,.06)}
-.btn.primary{border:0;color:#071018;background:linear-gradient(135deg,var(--brand2),var(--brand))}
-.notice{padding:12px 14px;border-radius:16px;border:1px solid var(--line);background:rgba(106,167,255,.08);color:var(--muted)}
-.footer{padding:26px 0 42px;border-top:1px solid var(--line);margin-top:30px}
-.footer-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:14px}
-@media (max-width:900px){.footer-grid{grid-template-columns:1fr}}
-.footer a{color:var(--muted);text-decoration:none}
-.footer a:hover{color:var(--text)}
+.pricing-line{margin-top:10px;color:var(--text);font-size:13px}
+.pricing-line strong{font-weight:750}
+.footer{padding:18px 0 28px;border-top:1px solid var(--line);margin-top:26px}
+.footer-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+@media (max-width: 820px){.footer-grid{grid-template-columns:1fr}}
   </style>
 </head>
 
 <body>
+
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="index.html">
@@ -72,7 +73,7 @@ h1{font-size:40px;line-height:1.08;margin:0 0 12px}
 
       <nav class="menu" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="subjects.html" style="color: var(--text); border-color: var(--line); background: rgba(255,255,255,.04)">Subjects</a>
+        <a href="subjects.html" style="color:var(--text);border-color:var(--line);background:rgba(255,255,255,.04)">Subjects</a>
         <a href="how-it-works.html">How it works</a>
         <a href="prices.html" class="cta">Prices</a>
         <a href="faqs.html">FAQs</a>
@@ -88,31 +89,66 @@ h1{font-size:40px;line-height:1.08;margin:0 0 12px}
       <div class="card pad">
         <h1>Subjects</h1>
         <p class="lead">
-          Choose <strong>Computer Science</strong>, <strong>Maths</strong>, or <strong>English</strong>.
-          We teach <strong>GCSE/iGCSE</strong> and <strong>A Level</strong> in small groups with strong emphasis on
-          <strong>exam technique</strong> and <strong>confident understanding</strong>.
+          Choose a subject and then pick the teaching format that fits your student best:
+          <strong>small-group courses</strong> or <strong>private 1:1 tuition</strong>.
         </p>
 
         <div class="badges">
+          <span class="badge">GCSE/iGCSE + A Level</span>
+          <span class="badge">Exam-focused teaching</span>
           <span class="badge">Maximum class size: 10</span>
-          <span class="badge">Structured notes (Word/PDF)</span>
-          <span class="badge">Exam-style questions + worked answers</span>
         </div>
 
         <div class="hr"></div>
 
-        <div class="notice">
-          <strong>Included from Day 1:</strong> full lesson notes (Word/PDF), exam-style questions with worked answers,
-          and access to past papers for the student’s exam board.
+        <!-- FORMAT CHOICE -->
+        <h2 style="margin:0 0 10px">Choose your format</h2>
+        <div class="grid2">
+          <div class="subject-card">
+            <h3>Small-group courses</h3>
+            <p>
+              Weekly <strong>90 min live lessons</strong> with structured resources, exam practice, feedback, and lesson recordings.
+              Ideal for consistent progress and exam readiness.
+            </p>
+
+            <div class="pricing-line">
+              <strong>GCSE/iGCSE:</strong> £45 per week &nbsp;·&nbsp;
+              <strong>A Level:</strong> £60 per week
+            </div>
+
+            <div class="btnrow">
+              <a class="btn primary" href="prices.html">Small-group prices</a>
+              <a class="btn" href="how-it-works.html">How it works</a>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <h3>Private 1:1 tuition</h3>
+            <p>
+              Fully personalised teaching pace, targeted intervention, and rapid improvement.
+              Ideal for catching up, aiming high, or very specific exam-board needs.
+            </p>
+
+            <div class="pricing-line">
+              <strong>GCSE/iGCSE:</strong> £50 per hour &nbsp;·&nbsp;
+              <strong>A Level:</strong> £60 per hour
+            </div>
+
+            <div class="btnrow">
+              <a class="btn primary" href="one-to-one.html">Private 1:1 details</a>
+              <a class="btn" href="contact.html">Enquire about 1:1</a>
+            </div>
+          </div>
         </div>
 
         <div class="hr"></div>
 
-        <h2 style="margin:0 0 10px">GCSE/iGCSE</h2>
+        <!-- GCSE -->
+        <h2 style="margin:0 0 10px">GCSE / iGCSE</h2>
         <div class="grid2">
           <div class="subject-card">
             <h3>Computer Science</h3>
-            <p>Programming, algorithms, data representation, networking, security and exam technique.</p>
+            <p>Programming, algorithms, and core theory taught clearly with exam technique built in.</p>
             <div class="btnrow">
               <a class="btn primary" href="gcse-computer-science.html">View GCSE/iGCSE Computer Science</a>
             </div>
@@ -120,7 +156,7 @@ h1{font-size:40px;line-height:1.08;margin:0 0 12px}
 
           <div class="subject-card">
             <h3>Maths</h3>
-            <p>Core skills, problem solving, exam methods, and confidence-building practice.</p>
+            <p>Strong foundations, problem solving, and exam practice across key GCSE/iGCSE topics.</p>
             <div class="btnrow">
               <a class="btn primary" href="gcse-maths.html">View GCSE/iGCSE Maths</a>
             </div>
@@ -137,6 +173,7 @@ h1{font-size:40px;line-height:1.08;margin:0 0 12px}
 
         <div class="hr"></div>
 
+        <!-- A LEVEL -->
         <h2 style="margin:0 0 10px">A Level</h2>
         <div class="grid2">
           <div class="subject-card">
@@ -168,7 +205,8 @@ h1{font-size:40px;line-height:1.08;margin:0 0 12px}
 
         <div class="btnrow">
           <a class="btn" href="how-it-works.html">How it works</a>
-          <a class="btn primary" href="prices.html">View prices</a>
+          <a class="btn" href="prices.html">Small-group prices</a>
+          <a class="btn primary" href="one-to-one.html">Private 1:1</a>
         </div>
       </div>
 
