@@ -1,5 +1,20 @@
 (function () {
 
+	function setActiveNavLink() {
+	  const path = location.pathname.split("/").pop() || "index.html";
+	  const links = document.querySelectorAll('.menu a[href]');
+
+	  links.forEach(a => a.classList.remove("is-active"));
+
+	  // Match exact filename (e.g. subjects.html)
+	  const active = Array.from(links).find(a => {
+		const href = a.getAttribute("href");
+		return href === path;
+	  });
+
+	  if (active) active.classList.add("is-active");
+	}
+
   // Ensure styles.css is loaded (helps when injecting fragments)
   if (!document.querySelector('link[href="styles.css"]')) {
     const link = document.createElement("link");
