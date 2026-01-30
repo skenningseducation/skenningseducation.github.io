@@ -182,6 +182,16 @@ a{color:inherit;text-decoration:none}
   border-color:transparent;
   background:linear-gradient(135deg,var(--brand2),var(--brand));
 }
+/* Active nav item text should be black */
+.menu a.is-active{
+  color:#071018;           /* near-black, consistent with brand */
+}
+
+/* Ensure hover/focus don't override active colour */
+.menu a.is-active:hover,
+.menu a.is-active:focus{
+  color:#071018;
+}
 
 
 /* LAYOUT */
