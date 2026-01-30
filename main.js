@@ -1,19 +1,23 @@
 (function () {
 
-	function setActiveNavLink() {
-	  const path = location.pathname.split("/").pop() || "index.html";
-	  const links = document.querySelectorAll('.menu a[href]');
+  function setActiveNavLink() {
+    const path = location.pathname.split("/").pop() || "index.html";
+    const links = document.querySelectorAll('.menu a[href]');
 
-	  links.forEach(a => a.classList.remove("is-active"));
+    links.forEach(a => a.classList.remove("is-active"));
 
-	  // Match exact filename (e.g. subjects.html)
-	  const active = Array.from(links).find(a => {
-		const href = a.getAttribute("href");
-		return href === path;
-	  });
+    const active = Array.from(links).find(a => a.getAttribute("href") === path);
+    if (active) active.classList.add("is-active");
+  }
 
-	  if (active) active.classList.add("is-active");
-	}
+  // Switch active state immediately on click (nice UX)
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest('.menu a[href]');
+    if (!a) return;
+
+    document.querySelectorAll('.menu a').forEach(x => x.classList.remove("is-active"));
+    a.classList.add("is-active");
+  });
 
   // Ensure styles.css is loaded (helps when injecting fragments)
   if (!document.querySelector('link[href="styles.css"]')) {
@@ -27,7 +31,6 @@
     const targets = document.querySelectorAll('[data-enquiry-form]');
     if (!targets.length) return;
 
-    // Works on GitHub Pages + custom domains
     const formUrl = location.origin + "/enquiry-form.html";
 
     let formHtml = "";
@@ -48,15 +51,12 @@
       const form = t.querySelector("form");
       if (!form) return;
 
-      // Unique IDs (in case multiple forms appear on one page)
       form.id = `contact-form-${idx}`;
 
-      // Set subject from the placeholder attribute
       const subjectFromDiv = t.getAttribute("data-subject") || "New enquiry – Skennings Education";
       const subjInput = form.querySelector('input[name="_subject"]');
       if (subjInput) subjInput.value = subjectFromDiv;
 
-      // Make success/error unique too
       const success = form.querySelector("#form-success");
       const error = form.querySelector("#form-error");
       const button = form.querySelector('button[type="submit"]');
@@ -102,10 +102,15 @@
     });
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", injectEnquiryForms);
-  } else {
+  function init() {
+    setActiveNavLink();
     injectEnquiryForms();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
   }
 
 })();
