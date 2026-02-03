@@ -4,144 +4,250 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Skennings Education | Online GCSE/iGCSE & A Level Teaching</title>
-  <meta name="description" content="Small-group GCSE/iGCSE and A Level teaching in Computer Science, Maths and English. Online, exam-focused, confidence-building."/>
-
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Small-group online teaching for GCSE/iGCSE and A Level in Computer Science, Maths and English. Also remote supply teaching for schools."/>
+  <style>
+    :root{
+      --bg:#0b1220;--panel:#0f1a2e;--text:#e8eefc;--muted:#b7c3dd;
+      --brand:#6aa7ff;--brand2:#8bffcc;--line:rgba(255,255,255,.12);
+      --shadow:0 10px 30px rgba(0,0,0,.35);--radius:18px;--maxw:1100px
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);
+      background:linear-gradient(180deg,#081024 0%, #0b1220 40%, #07101f 100%)}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
+    .logo{font-weight:800;letter-spacing:.2px}
+    nav{display:flex;flex-wrap:wrap;gap:10px}
+    nav a{padding:8px 10px;border-radius:12px;border:1px solid transparent;color:var(--muted)}
+    nav a:hover{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+    .hero{padding:28px 0 10px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:stretch}
+    @media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+    h1{font-size:40px;line-height:1.1;margin:0 0 10px}
+    p{margin:0 0 12px;color:var(--muted);line-height:1.5}
+    .panel{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .pad{padding:18px}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .badge{font-size:13px;color:var(--text);background:rgba(106,167,255,.12);border:1px solid rgba(106,167,255,.28);padding:6px 10px;border-radius:999px}
+    .badge.alt{background:rgba(139,255,204,.10);border-color:rgba(139,255,204,.26)}
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+    .btn.primary{border-color:rgba(106,167,255,.55);background:linear-gradient(90deg, rgba(106,167,255,.25), rgba(139,255,204,.12))}
+    .btn:hover{transform:translateY(-1px)}
+    .kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+    @media (max-width:700px){.kpi{grid-template-columns:1fr}}
+    .kpi .panel{padding:14px}
+    .kpi strong{font-size:18px;display:block;margin-bottom:4px}
+    .section{padding:18px 0}
+    h2{font-size:26px;margin:0 0 12px}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media (max-width:900px){.two{grid-template-columns:1fr}}
+    ul{margin:10px 0 0 18px;color:var(--muted);line-height:1.55}
+    .small{font-size:13px;color:var(--muted)}
+    footer{padding:26px 0 10px;border-top:1px solid var(--line);margin-top:18px}
+    .footer-grid{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start}
+    @media (max-width:800px){.footer-grid{grid-template-columns:1fr}}
+    .links{display:flex;flex-wrap:wrap;gap:10px}
+    .contact{display:grid;gap:8px}
+    input,select,textarea{width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--line);
+      background:rgba(0,0,0,.18);color:var(--text)}
+    label{font-size:13px;color:var(--muted)}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    @media (max-width:700px){.form-row{grid-template-columns:1fr}}
+  </style>
 </head>
-
 <body>
-  <!-- NAV -->
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html">
+  <div class="wrap">
+    <header>
+      <div class="logo">Skennings Education</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="prices.html">Prices</a>
+        <a href="one-to-one.html">One-to-one</a>
+        <a href="for-schools.html">For schools</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="holiday-masterclasses.html">Holiday masterclasses</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-grid">
         <div>
-          <strong>Skennings Education</strong>
-          <span>Online teaching (GCSE/iGCSE + A Level)</span>
-        </div>
-      </a>
+          <h1>Small-group GCSE/iGCSE &amp; A Level teaching that builds exam confidence</h1>
+          <p>
+            Live, teacher-led lessons in <strong>Computer Science</strong>, <strong>Maths</strong> and <strong>English</strong>.
+            Ideal for students who want extra support alongside school, or students using this as their main provision.
+          </p>
 
-      <nav class="menu" aria-label="Primary">
-  <a href="index.html">Home</a>
-  <a href="subjects.html">Subjects</a>
-  <a href="how-it-works.html">How it works</a>
-  <a href="prices.html">Prices</a>
-  <a href="one-to-one.html">One-to-one</a>
-  <a href="for-schools.html">For schools</a>
-  <a href="faqs.html">FAQs</a>
-  <a href="holiday-masterclasses.html">Holiday masterclasses</a>
-</nav>
-    </div>
-  </header>
+          <div class="badges">
+            <div class="badge">Maximum class size: 10</div>
+            <div class="badge alt">Exam-focused teaching</div>
+            <div class="badge">Structured weekly plan</div>
+            <div class="badge alt">Clear parent communication</div>
+          </div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
+          <div class="cta-row">
+            <a class="btn primary" href="subjects.html">View subjects</a>
+            <a class="btn" href="prices.html">View prices</a>
+            <a class="btn" href="for-schools.html">Remote supply for schools</a>
+          </div>
 
-      <!-- LEFT: MAIN CONTENT -->
-      <div class="card pad">
-        <h1>Small-group GCSE/iGCSE & A Level teaching that builds exam confidence</h1>
-
-        <p class="lead">
-          Live, teacher-led lessons in <strong>Computer Science</strong>, <strong>Maths</strong> and <strong>English</strong>.
-          Ideal for students who want extra support alongside school or students using this as their main provision.
-        </p>
-
-        <div class="badges">
-          <span class="badge">Maximum class size: 10</span>
-          <span class="badge">GCSE/iGCSE & A Level</span>
-          <span class="badge">Exam-focused teaching</span>
+          <div class="kpi">
+            <div class="panel">
+              <strong>Day 1 resources included</strong>
+              <div class="small">Full course lesson pack + exam-style questions with model answers.</div>
+            </div>
+            <div class="panel">
+              <strong>Built for exam marks</strong>
+              <div class="small">Mark-scheme thinking, timed practice, and feedback every week.</div>
+            </div>
+            <div class="panel">
+              <strong>Real interaction</strong>
+              <div class="small">Small classes so students get called on, corrected, and coached.</div>
+            </div>
+          </div>
         </div>
 
-        <div class="hr"></div>
-
-		<div class="notice">
-		  <strong>Day 1 resources included:</strong>
-		  full lesson plans for the entire course containing explanations of all the key concepts
-		  and exam questions with model answers.
-		</div>
-
-        <div class="hr"></div>
-
-        <!-- KPI BOXES INSIDE LEFT CARD -->
-		<div class="grid3">
-		  <div class="notice kpi-box">
-			<strong>Small classes</strong><br>
-			Maximum 10 students per class for real interaction and feedback.
-		  </div>
-
-		  <div class="notice kpi-box">
-			<strong>Built for exams</strong><br>
-			Exam-style questions and mark-scheme thinking throughout.
-		  </div>
-
-		  <div class="notice kpi-box">
-			<strong>Confidence & results</strong><br>
-			Clear explanations, structured practice, and steady progress.
-		  </div>
-		</div>
-
-
-        <div class="btnrow">
-          <a class="btn" href="subjects.html">View subjects</a>
-          <a class="btn primary" href="prices.html">View prices</a>
+        <div class="panel pad">
+          <h2 style="margin:0 0 10px">Online School option</h2>
+          <p class="small" style="margin:0 0 12px">
+            For homeschooling and international students who want a UK-style, exam-aligned pathway.
+          </p>
+          <ul>
+            <li>Timetabled lessons + clear weekly homework expectations</li>
+            <li>Progress tracking and simple reports for parents</li>
+            <li>Recorded lessons and shared resources for review</li>
+            <li>GCSE/iGCSE &amp; A Level focus (by subject)</li>
+          </ul>
+          <div class="cta-row" style="margin-top:12px">
+            <a class="btn primary" href="#contact">Enquire about online school</a>
+            <a class="btn" href="how-it-works.html">See how lessons run</a>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- RIGHT: CONTACT / FORM -->
-      <div class="card pad">
-        <h2 style="margin-top:0">Contact</h2>
-        <p class="small">
-          Phone: <a href="tel:07405664243">07405664243</a><br>
-          Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
-        </p>
-
-        <div class="hr"></div>
-
-        <h3 style="margin:0 0 8px">Quick enquiry</h3>
-
-        <!-- Enquiry form injected by main.js -->
-        <div data-enquiry-form data-subject="New enquiry - Skennings Education (home page)"></div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <div style="font-weight:800">Skennings Education</div>
-        <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
-        <div class="small" style="margin-top:8px">
-          Phone: <a href="tel:07405664243">07405664243</a> ·
-          Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
+    <section class="section">
+      <h2>Two ways we help</h2>
+      <div class="two">
+        <div class="panel pad">
+          <h3 style="margin:0 0 8px">For families</h3>
+          <p class="small" style="margin:0 0 10px">Small-group teaching that steadily improves grades and confidence.</p>
+          <ul>
+            <li>Maximum 10 students per class</li>
+            <li>Exam-style questions every lesson</li>
+            <li>Clear explanations and structured practice</li>
+            <li>Option to add one-to-one when needed</li>
+          </ul>
+          <div class="cta-row" style="margin-top:12px">
+            <a class="btn primary" href="subjects.html">Choose a subject</a>
+            <a class="btn" href="prices.html">See pricing</a>
+          </div>
         </div>
-        <div class="small" style="margin-top:8px">© 2026 Skennings Education. All rights reserved.</div>
-      </div>
 
-      <div>
-  <div class="small" style="font-weight:800;margin-bottom:8px">Quick links</div>
-  <div class="small" style="display:flex;flex-direction:column;gap:6px">
-    <a href="index.html">Home</a>
-    <a href="subjects.html">Subjects</a>
-    <a href="how-it-works.html">How it works</a>
-    <a href="prices.html">Prices</a>
-    <a href="one-to-one.html">One-to-one</a>
-    <a href="for-schools.html">For schools</a>
-    <a href="faqs.html">FAQs</a>
-    <a href="contact.html">Contact</a>
-    <a href="holiday-masterclasses.html">Holiday masterclasses</a>
+        <div class="panel pad">
+          <h3 style="margin:0 0 8px">For schools (Remote Supply)</h3>
+          <p class="small" style="margin:0 0 10px">
+            Remote teaching for staff absence, timetable gaps, exam intervention, and funded tutoring.
+          </p>
+          <ul>
+            <li>Live remote teaching to your classroom (GCSE/iGCSE &amp; A Level)</li>
+            <li>Works with a cover supervisor on-site</li>
+            <li>QTS + Enhanced DBS teachers</li>
+            <li>Fast onboarding and clear lesson delivery routines</li>
+          </ul>
+          <div class="cta-row" style="margin-top:12px">
+            <a class="btn primary" href="for-schools.html">See the remote supply model</a>
+            <a class="btn" href="#contact">School enquiry</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="panel pad">
+        <h2>Contact</h2>
+        <p class="small">Tell us what you need and we’ll reply with next steps.</p>
+
+        <div class="contact">
+          <div><strong>Phone:</strong> 07405664243</div>
+          <div><strong>Email:</strong> ben@skenningseducation.com</div>
+        </div>
+
+        <h3 style="margin:18px 0 10px">Quick enquiry</h3>
+        <form action="#" method="post">
+          <div class="form-row">
+            <div>
+              <label>Your name</label>
+              <input type="text" name="name" required/>
+            </div>
+            <div>
+              <label>Email</label>
+              <input type="email" name="email" required/>
+            </div>
+          </div>
+
+          <div class="form-row" style="margin-top:10px">
+            <div>
+              <label>Enquiry type</label>
+              <select name="type" required>
+                <option value="">Select…</option>
+                <option>Family – Small-group lessons</option>
+                <option>Family – Online school (homeschool/international)</option>
+                <option>School – Remote supply teaching</option>
+                <option>School – Tutoring / intervention</option>
+              </select>
+            </div>
+            <div>
+              <label>Subject</label>
+              <select name="subject" required>
+                <option value="">Select…</option>
+                <option>Computer Science</option>
+                <option>Maths</option>
+                <option>English</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="margin-top:10px">
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Year group, exam board (if known), and what you’re trying to achieve…"></textarea>
+          </div>
+
+          <div class="cta-row" style="margin-top:12px">
+            <button class="btn primary" type="submit">Send enquiry</button>
+          </div>
+
+          <p class="small" style="margin-top:10px">
+            Prefer email? Send the same details to <strong>ben@skenningseducation.com</strong>.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <div class="small">
+            © 2026 Skennings Education. All rights reserved.
+          </div>
+          <div class="small" style="margin-top:6px">
+            Online teaching for GCSE/iGCSE and A Level.
+          </div>
+        </div>
+        <div class="links">
+          <a class="btn" href="index.html">Home</a>
+          <a class="btn" href="subjects.html">Subjects</a>
+          <a class="btn" href="how-it-works.html">How it works</a>
+          <a class="btn" href="prices.html">Prices</a>
+          <a class="btn" href="for-schools.html">For schools</a>
+          <a class="btn" href="faqs.html">FAQs</a>
+        </div>
+      </div>
+    </footer>
   </div>
-</div>
-    </div>
-  </footer>
-
-  <script defer src="main.js?v=2"></script>
 </body>
 </html>
-
-
-
-
-
-
