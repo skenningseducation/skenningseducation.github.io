@@ -32,7 +32,7 @@
       <div class="card pad">
         <h1>GCSE/iGCSE Computer Science</h1>
         <p class="lead">
-          Clear explanations, regular practice, and exam technique â€” with a strong focus on
+          Clear explanations, regular practice, and exam technique €” with a strong focus on
           <strong>Python programming</strong> and the core theory needed for top marks.
           Suitable as supplementary support or as a complete teaching pathway.
         </p>
@@ -47,7 +47,7 @@
 
         <div class="notice">
           <strong>Included from Day 1:</strong> full lesson notes (Word/PDF), exam-style questions with worked answers,
-          and access to past papers for the studentâ€™s exam board.
+          and access to past papers for the student€™s exam board.
         </div>
 
         <div class="hr"></div>
@@ -76,32 +76,32 @@
           </thead>
           <tbody>
             <tr>
-              <td>1â€“5</td>
+              <td>1€“5</td>
               <td>Programming basics (Python) + core CS fundamentals</td>
               <td>Confident code structure, debugging habits, and core terminology</td>
             </tr>
             <tr>
-              <td>6â€“10</td>
+              <td>6€“10</td>
               <td>Data representation + networks foundations</td>
               <td>More reliable calculations/definitions and stronger exam responses</td>
             </tr>
             <tr>
-              <td>11â€“15</td>
+              <td>11€“15</td>
               <td>Systems/architecture + memory/storage + security basics</td>
               <td>Higher consistency on theory questions and fewer common mistakes</td>
             </tr>
             <tr>
-              <td>16â€“20</td>
+              <td>16€“20</td>
               <td>Algorithms, trace tables, problem solving + programming depth</td>
               <td>Stronger algorithm answers and improved coding under time pressure</td>
             </tr>
             <tr>
-              <td>21â€“25</td>
+              <td>21€“25</td>
               <td>Databases / Boolean logic / advanced exam patterns (as required)</td>
               <td>Confidence on higher-mark questions and structured explanations</td>
             </tr>
             <tr>
-              <td>26â€“30</td>
+              <td>26€“30</td>
               <td>Revision + timed past papers</td>
               <td>Exam readiness, improved technique, speed and confidence</td>
             </tr>
@@ -145,8 +145,8 @@
             <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
           </div>
         </div>
-        <div class="small">Phone: <a href="tel:07405664243">07405664243</a> Â· Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a></div>
-        <div class="small" style="margin-top:8px">Â© 2026 Skennings Education. All rights reserved.</div>
+        <div class="small">Phone: <a href="tel:07405664243">07405664243</a> · Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a></div>
+        <div class="small" style="margin-top:8px">© 2026 Skennings Education. All rights reserved.</div>
       </div>
       <div>
   <div class="small" style="font-weight:800;margin-bottom:8px">Quick links</div>
@@ -182,7 +182,7 @@
 
     if(button){
       button.disabled = true;
-      button.textContent = "Sendingâ€¦";
+      button.textContent = "Sending€¦";
     }
 
     try{

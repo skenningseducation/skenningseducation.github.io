@@ -62,8 +62,8 @@
           </p>
 
           <div class="pricing-line">
-            <strong>GCSE/iGCSE:</strong> Â£45 per class (90 mins)<br>
-            <strong>A Level:</strong> Â£55 per class (90 mins)
+            <strong>GCSE/iGCSE:</strong> £45 per class (90 mins)<br>
+            <strong>A Level:</strong> £55 per class (90 mins)
           </div>
 
           <div class="btnrow" style="flex-direction:column;align-items:flex-start">
@@ -81,8 +81,8 @@
           </p>
 
           <div class="pricing-line">
-            <strong>GCSE/iGCSE:</strong> Â£50 per class (60 mins)<br>
-            <strong>A Level:</strong> Â£60 per class (60 mins)
+            <strong>GCSE/iGCSE:</strong> £50 per class (60 mins)<br>
+            <strong>A Level:</strong> £60 per class (60 mins)
           </div>
 
           <div class="btnrow" style="flex-direction:column;align-items:flex-start">
@@ -188,10 +188,10 @@
       <div style="font-weight:800">Skennings Education</div>
       <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
       <div class="small" style="margin-top:8px">
-        Phone: <a href="tel:07405664243">07405664243</a> Â·
+        Phone: <a href="tel:07405664243">07405664243</a> ·
         Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
       </div>
-      <div class="small" style="margin-top:8px">Â© 2026 Skennings Education. All rights reserved.</div>
+      <div class="small" style="margin-top:8px">© 2026 Skennings Education. All rights reserved.</div>
     </div>
 
     <div>
