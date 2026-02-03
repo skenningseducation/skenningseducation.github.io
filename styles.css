@@ -497,3 +497,15 @@ select.input option{
   .site-header__inner{ flex-direction: column; align-items: flex-start; }
   .site-nav{ justify-content: flex-start; width: 100%; }
 }
+
+/* ===== Force school nav to be plain text links (no pill buttons) ===== */
+.site-nav a{
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 1px solid transparent !important;
+  border-radius: 12px !important;
+}
+.site-nav a:hover{
+  border-color: rgba(255,255,255,.12) !important;
+  background: rgba(255,255,255,.04) !important;
+}
