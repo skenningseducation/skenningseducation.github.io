@@ -29,25 +29,35 @@
     document.head.appendChild(link);
   }
 
+  async function fetchFormHtml(url, fallbackMessage) {
+    try {
+      const res = await fetch(url, { cache: "no-cache" });
+      if (!res.ok) throw new Error("Failed to load form");
+      return await res.text();
+    } catch (e) {
+      return `<p class="small">${fallbackMessage}</p>`;
+    }
+  }
+
   async function injectEnquiryForms() {
     const targets = document.querySelectorAll('[data-enquiry-form]');
     if (!targets.length) return;
 
-    const formUrl = location.origin + "/enquiry-form.html";
+    // Default (parents/students) form
+    const defaultFormUrl = location.origin + "/enquiry-form.html";
+    // School form
+    const schoolFormUrl = location.origin + "/school-enquiry-form.html";
 
-    let formHtml = "";
-    try {
-      const res = await fetch(formUrl, { cache: "no-cache" });
-      if (!res.ok) throw new Error("Failed to load enquiry-form.html");
-      formHtml = await res.text();
-    } catch (e) {
-      targets.forEach(t => {
-        t.innerHTML = `<p class="small">Form failed to load. Please email us directly.</p>`;
-      });
-      return;
-    }
+    // Preload both (fast + avoids repeated fetches)
+    const [defaultHtml, schoolHtml] = await Promise.all([
+      fetchFormHtml(defaultFormUrl, "Form failed to load. Please email us directly."),
+      fetchFormHtml(schoolFormUrl, "School form failed to load. Please email us directly.")
+    ]);
 
     targets.forEach((t, idx) => {
+      const mode = (t.getAttribute("data-form") || "").toLowerCase();
+      const formHtml = mode === "school" ? schoolHtml : defaultHtml;
+
       t.innerHTML = formHtml;
 
       const form = t.querySelector("form");
@@ -99,7 +109,13 @@
         } finally {
           if (button) {
             button.disabled = false;
-            button.textContent = "Send enquiry";
+
+            // Restore the correct button label for each mode
+            if (mode === "school") {
+              button.textContent = "Request availability";
+            } else {
+              button.textContent = "Send enquiry";
+            }
           }
         }
       });
