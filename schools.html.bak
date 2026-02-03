@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
@@ -18,7 +18,7 @@
       <a href="schools.html">Home</a>
       <a href="for-schools.html">Remote supply model</a>
       <a href="contact.html">Contact</a>
-      <a href="index.html">Parent / School</a>
+      <a href="index.html">Switch audience</a>
     </nav>
   </div>
 </header>
@@ -88,17 +88,17 @@
             <div>
               <label class="small">Support needed</label>
               <select class="input" name="support" required>
-                <option value="">Selectâ€¦</option>
-                <option>Remote supply â€“ timetable cover</option>
-                <option>Intervention â€“ small group</option>
-                <option>Tutoring â€“ one-to-one</option>
+                <option value="">Select…</option>
+                <option>Remote supply – timetable cover</option>
+                <option>Intervention – small group</option>
+                <option>Tutoring – one-to-one</option>
                 <option>Combination</option>
               </select>
             </div>
             <div>
               <label class="small">Subject</label>
               <select class="input" name="subject" required>
-                <option value="">Selectâ€¦</option>
+                <option value="">Select…</option>
                 <option>Computer Science</option>
                 <option>Business Studies</option>
                 <option>English</option>
@@ -108,7 +108,7 @@
 
           <div style="margin-top:10px">
             <label class="small">Details</label>
-            <textarea class="input" name="details" rows="6" placeholder="Year group, exam board, start date, lessons per week, class size, and whether you have a cover supervisor in-roomâ€¦"></textarea>
+            <textarea class="input" name="details" rows="6" placeholder="Year group, exam board, start date, lessons per week, class size, and whether you have a cover supervisor in-room…"></textarea>
           </div>
 
           <div class="btnrow" style="margin-top:12px">
@@ -141,7 +141,7 @@
     <div>
       <div style="font-weight:800">Skennings Education</div>
       <div class="small">Schools pathway</div>
-      <div class="small" style="margin-top:8px">Â© 2026 Skennings Education. All rights reserved.</div>
+      <div class="small" style="margin-top:8px">© 2026 Skennings Education. All rights reserved.</div>
     </div>
 
     <div>
@@ -156,4 +156,3 @@
 
 </body>
 </html>
-
