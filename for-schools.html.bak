@@ -16,13 +16,8 @@
 
     <nav class="site-nav" aria-label="Primary">
       <a href="schools.html">Home</a>
-      <a href="subjects.html">Subjects</a>
-      <a href="how-it-works.html">How it works</a>
-      <a href="prices.html">Prices</a>
-      <a href="one-to-one.html">One-to-one</a>
-      <a href="for-schools.html">For schools</a>
-      <a href="faqs.html">FAQs</a>
-      <a href="holiday-masterclasses.html">Holiday masterclasses</a>
+      <a href="for-schools.html">Remote supply model</a>
+      <a href="index.html">Parent / School</a>
     </nav>
   </div>
 </header>
@@ -197,7 +192,58 @@
       <div class="hr"></div>
 
       <h3 style="margin:0 0 8px">Quick enquiry</h3>
-      <div data-enquiry-form data-subject="New enquiry - Skennings Education (for-schools.html)"></div>
+      <h2 style="margin-top:0">School enquiry</h2>
+<p class="small">Share the basics and we’ll respond with availability and a simple onboarding plan.</p>
+
+<form action="#" method="post">
+  <div class="grid2" style="margin-top:6px">
+    <div>
+      <label class="small">School name</label>
+      <input class="input" type="text" name="school" required/>
+    </div>
+    <div>
+      <label class="small">Contact email</label>
+      <input class="input" type="email" name="email" required/>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:10px">
+    <div>
+      <label class="small">Support needed</label>
+      <select class="input" name="support" required>
+        <option value="">Select…</option>
+        <option>Remote supply – timetable cover</option>
+        <option>Intervention – small group</option>
+        <option>Tutoring – one-to-one</option>
+        <option>Combination</option>
+      </select>
+    </div>
+    <div>
+      <label class="small">Subject</label>
+      <select class="input" name="subject" required>
+        <option value="">Select…</option>
+        <option>Computer Science</option>
+        <option>Business Studies</option>
+        <option>English</option>
+      </select>
+    </div>
+  </div>
+
+  <div style="margin-top:10px">
+    <label class="small">Details</label>
+    <textarea class="input" name="details" rows="6" placeholder="Year group, exam board, start date, lessons per week, class size, and whether you have a cover supervisor in-room…"></textarea>
+  </div>
+
+  <div class="btnrow" style="margin-top:12px">
+    <button class="btn primary" type="submit">Send enquiry</button>
+    <a class="btn" href="contact.html">Use the general contact</a>
+  </div>
+
+  <p class="small" style="margin-top:10px">
+    Phone: <a href="tel:07405664243">07405664243</a><br>
+    Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
+  </p>
+</form>
     </div>
 
   </div>
@@ -234,4 +280,7 @@
 
 </body>
 </html>
+
+
+
 

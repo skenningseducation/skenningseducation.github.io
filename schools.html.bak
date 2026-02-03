@@ -17,7 +17,6 @@
     <nav class="site-nav" aria-label="Primary">
       <a href="schools.html">Home</a>
       <a href="for-schools.html">Remote supply model</a>
-      <a href="contact.html">Contact</a>
       <a href="index.html">Parent / School</a>
     </nav>
   </div>
@@ -156,5 +155,7 @@
 
 </body>
 </html>
+
+
 
 
