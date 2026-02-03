@@ -16,21 +16,30 @@
   <div class="hr"></div>
 
   <!-- PROVISION -->
-  <select class="input" name="subject_area" required>
+  <select class="input" name="subject_area" required data-has-other>
     <option value="" selected disabled hidden>Subject area</option>
-    <option>Computer Science</option>
-    <option>Business Studies</option>
-    <option>English</option>
-    <option>Maths</option>
-    <option>Other</option>
+    <option value="Computer Science">Computer Science</option>
+    <option value="Business Studies">Business Studies</option>
+    <option value="English">English</option>
+    <option value="Maths">Maths</option>
+    <option value="Other">Other</option>
   </select>
+
+  <!-- Revealed only if "Other" is chosen -->
+  <input
+    class="input"
+    name="subject_area_other"
+    placeholder="Please specify subject area"
+    data-other-field
+    style="display:none"
+  >
 
   <select class="input" name="level" required>
     <option value="" selected disabled hidden>Level</option>
-    <option>KS3</option>
-    <option>GCSE / iGCSE</option>
-    <option>A Level</option>
-    <option>Mixed</option>
+    <option value="KS3">KS3</option>
+    <option value="GCSE / iGCSE">GCSE / iGCSE</option>
+    <option value="A Level">A Level</option>
+    <option value="Mixed">Mixed</option>
   </select>
 
   <input class="input" name="exam_board" placeholder="Exam board (if applicable) e.g. AQA, OCR, Edexcel, Cambridge">
@@ -42,16 +51,20 @@
   <!-- DELIVERY CONTEXT -->
   <select class="input" name="support_type" required>
     <option value="" selected disabled hidden>Type of support required</option>
-    <option>Ongoing weekly teaching</option>
-    <option>Short-term cover</option>
-    <option>Long-term vacancy cover</option>
-    <option>Intervention / funded tutoring</option>
-    <option>Exam revision programme</option>
+    <option value="Ongoing weekly teaching">Ongoing weekly teaching</option>
+    <option value="Short-term cover">Short-term cover</option>
+    <option value="Long-term vacancy cover">Long-term vacancy cover</option>
+    <option value="Intervention / funded tutoring">Intervention / funded tutoring</option>
+    <option value="Exam revision programme">Exam revision programme</option>
   </select>
 
   <input class="input" name="start_date" placeholder="Preferred start date (or ASAP)">
 
-  <textarea class="input" name="message" placeholder="Brief outline of your requirement (e.g. staffing gap, timetable coverage, exam focus, constraints)"></textarea>
+  <textarea
+    class="input"
+    name="message"
+    placeholder="Brief outline of your requirement (e.g. staffing gap, timetable coverage, exam focus, constraints)…"
+  ></textarea>
 
   <label class="small" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px">
     <input type="checkbox" name="gdpr_consent" required style="margin-top:3px">
@@ -69,10 +82,9 @@
   </div>
 
   <p class="small" id="form-success" style="display:none;color:var(--brand2);margin-top:10px">
-    Thank you - your message has been sent successfully.
+    Thank you — your message has been sent successfully.
   </p>
   <p class="small" id="form-error" style="display:none;color:#ffb4b4;margin-top:10px">
     Something went wrong. Please try again or email us directly.
   </p>
 </form>
-
