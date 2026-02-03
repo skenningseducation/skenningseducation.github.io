@@ -322,40 +322,65 @@ textarea.input{resize:vertical;min-height:120px}
   }
   .site-nav{justify-content:flex-start}
 }
-
 /* =========================
    SELECT / DROPDOWNS (match site theme)
+   - Works for normal selects AND injected enquiry form selects
    ========================= */
 
-/* Make selects look like your .input fields */
-select.input{
-  /* remove native styling so our theme shows */
+/* Targets:
+   1) <select class="input">
+   2) any <select> inside the injected enquiry form
+*/
+select.input,
+[data-enquiry-form] select{
+  width:100%;
+  border-radius:14px;
+  border:1px solid var(--line);
+  color:var(--text);
+  outline:none;
+
+  padding:12px 44px 12px 12px; /* room for arrow */
+  cursor:pointer;
+
+  background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02));
+
   -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;
 
-  /* keep consistent height/spacing */
-  padding-right:44px; /* room for arrow */
-  cursor:pointer;
-
-  /* subtle depth like cards */
-  background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02));
+  transition:transform .12s ease, background .15s ease, border-color .15s ease, box-shadow .15s ease;
 }
 
 /* hover should feel like your buttons */
-select.input:hover{
+select.input:hover,
+[data-enquiry-form] select:hover{
   background:linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.03));
   border-color:rgba(255,255,255,.18);
 }
 
 /* focus should use your brand colour (like primary button) */
-select.input:focus{
+select.input:focus,
+[data-enquiry-form] select:focus{
   border-color:rgba(106,167,255,.55); /* brand */
   background:linear-gradient(180deg, rgba(106,167,255,.12), rgba(255,255,255,.03));
   box-shadow:0 0 0 4px rgba(106,167,255,.16);
 }
 
-/* Wrap selects to add a consistent arrow */
+/* Options list theme (where supported) */
+select.input option,
+[data-enquiry-form] select option{
+  background:var(--panel);
+  color:var(--text);
+}
+
+/* Disabled */
+select.input:disabled,
+[data-enquiry-form] select:disabled{
+  opacity:.6;
+  cursor:not-allowed;
+}
+
+/* Arrow wrapper (only shows if the select is wrapped in .select-wrap) */
 .select-wrap{
   position:relative;
 }
@@ -368,7 +393,7 @@ select.input:focus{
   width:10px;
   height:10px;
   transform:translateY(-60%) rotate(45deg);
-  border-right:2px solid rgba(232,238,252,.75); /* var(--text) softened */
+  border-right:2px solid rgba(232,238,252,.75);
   border-bottom:2px solid rgba(232,238,252,.75);
   pointer-events:none;
 }
@@ -376,16 +401,4 @@ select.input:focus{
 .select-wrap:focus-within::after{
   border-right-color:rgba(139,255,204,.85); /* brand2 */
   border-bottom-color:rgba(139,255,204,.85);
-}
-
-/* Attempt to theme the dropdown options too (varies by browser/OS) */
-select.input option{
-  background:var(--panel);
-  color:var(--text);
-}
-
-/* Disabled selects */
-select.input:disabled{
-  opacity:.6;
-  cursor:not-allowed;
 }
