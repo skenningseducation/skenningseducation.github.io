@@ -1,0 +1,229 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>A Level English Language | Skennings Education</title>
+  <meta name="description" content="A Level English Language taught online in small groups. Strong skills focus, essay technique, language analysis, and exam confidence."/>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-logo" href="index.html">Skennings Education</a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="parents.html">Home</a>
+      <a href="subjects.html">Subjects</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="prices.html">Prices</a>
+      <a href="one-to-one.html">One-to-one</a>
+      <a href="for-schools.html">For schools</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="holiday-masterclasses.html">Holiday masterclasses</a>
+    </nav>
+  </div>
+</header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <!-- MAIN CONTENT -->
+      <div class="card pad">
+        <h1>A Level English Language</h1>
+        <p class="lead">
+          A structured A Level English Language programme that builds confident <strong>analysis</strong>, <strong>writing accuracy</strong>,
+          and <strong>exam technique</strong>. Suitable as supplementary support or as a complete teaching pathway.
+        </p>
+
+        <div class="badges">
+          <span class="badge">Maximum class size: 10</span>
+          <span class="badge">Analysis + essay technique</span>
+          <span class="badge">GCSE/iGCSE + A Level</span>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="notice">
+          <strong>Included from Day 1:</strong> full lesson notes (Word/PDF), exam-style questions with worked answers,
+          and guidance mapped to major exam boards, plus access to past papers for the studentâ€™s board.
+        </div>
+
+        <div class="hr"></div>
+
+        <h2 style="margin:0 0 10px">How lessons run</h2>
+        <ul class="list">
+          <li><strong>Live weekly lesson:</strong> teacher-led explanation, guided annotation, and worked model responses.</li>
+          <li><strong>Skills practice:</strong> close reading, language analysis, and accurate academic writing.</li>
+          <li><strong>Exam technique:</strong> timing, structure, planning, and mark-scheme language.</li>
+          <li><strong>Independent work:</strong> targeted tasks between lessons to build confidence and fluency.</li>
+          <li><strong>Feedback:</strong> clear, actionable improvements focused on gaining marks.</li>
+        </ul>
+
+        <div class="hr"></div>
+
+        <h2 style="margin:0 0 10px">30-week overview plan (Sept to exams)</h2>
+        <p class="small">General structure. Exact ordering is adjusted by exam board and class needs.</p>
+
+        <table class="table" aria-label="A Level English Language 30-week plan">
+          <thead>
+            <tr>
+              <th>Weeks</th>
+              <th>Main focus</th>
+              <th>Typical outcomes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1â€“5</td>
+              <td>Core language analysis skills + terminology refresh</td>
+              <td>More precise annotation, better evidence selection</td>
+            </tr>
+            <tr>
+              <td>6â€“10</td>
+              <td>Text types, audience, purpose, and representation</td>
+              <td>Stronger comparative points and clearer argument lines</td>
+            </tr>
+            <tr>
+              <td>11â€“15</td>
+              <td>Writing techniques: accuracy, style, structure, register</td>
+              <td>More controlled writing with exam-appropriate tone</td>
+            </tr>
+            <tr>
+              <td>16â€“20</td>
+              <td>Language change, context, and key frameworks (board mapped)</td>
+              <td>Confident use of concepts and structured explanation</td>
+            </tr>
+            <tr>
+              <td>21â€“25</td>
+              <td>Extended responses: planning, synthesis, evaluation</td>
+              <td>Higher-quality essays with clearer judgement and coherence</td>
+            </tr>
+            <tr>
+              <td>26â€“30</td>
+              <td>Revision + timed past papers</td>
+              <td>Exam readiness, speed, confidence, and consistency</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="hr"></div>
+
+        <div class="btnrow">
+          <a class="btn" href="subjects.html">Back to subjects</a>
+          <a class="btn primary" href="prices.html">View prices</a>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDEBAR (CONTACT + FORMSPREE) -->
+      <div class="card pad">
+        <h2 style="margin-top:0">Contact</h2>
+        <p class="small">
+          Phone: <a href="tel:07405664243">07405664243</a><br>
+          Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
+        </p>
+
+        <div class="hr"></div>
+
+        <h3 style="margin:0 0 8px">Quick enquiry</h3>
+
+        <div data-enquiry-form data-subject="New enquiry - Skennings Education (a-level-english-language.html)"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+          
+          <div>
+            <div style="font-weight:800">Skennings Education</div>
+            <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
+          </div>
+        </div>
+        <div class="small">Phone: <a href="tel:07405664243">07405664243</a> Â· Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a></div>
+        <div class="small" style="margin-top:8px">Â© 2026 Skennings Education. All rights reserved.</div>
+      </div>
+      <div>
+  <div class="small" style="font-weight:800;margin-bottom:8px">Quick links</div>
+  <div class="small" style="display:flex;flex-direction:column;gap:6px">
+    <a href="index.html">Home</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="how-it-works.html">How it works</a>
+    <a href="prices.html">Prices</a>
+    <a href="one-to-one.html">One-to-one</a>
+    <a href="for-schools.html">For schools</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="contact.html">Contact</a>
+    <a href="holiday-masterclasses.html">Holiday masterclasses</a>
+  </div>
+</div>
+    </div>
+  </footer>
+
+  <script>
+(function(){
+  const form = document.getElementById("contact-form");
+  const success = document.getElementById("form-success");
+  const error = document.getElementById("form-error");
+  const button = document.getElementById("contact-submit");
+
+  if(!form) return;
+
+  form.addEventListener("submit", async function(e){
+    e.preventDefault();
+
+    if(success) success.style.display = "none";
+    if(error) error.style.display = "none";
+
+    if(button){
+      button.disabled = true;
+      button.textContent = "Sendingâ€¦";
+    }
+
+    try{
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { "Accept": "application/json" }
+      });
+
+      if(response.ok){
+        form.reset();
+        if(success) success.style.display = "block";
+      }else{
+        if(error) error.style.display = "block";
+      }
+    }catch(err){
+      if(error) error.style.display = "block";
+    }finally{
+      if(button){
+        button.disabled = false;
+        button.textContent = "Send enquiry";
+      }
+    }
+  });
+})();
+  </script>
+  <script defer src="main.js?v=2"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

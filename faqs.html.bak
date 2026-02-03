@@ -1,0 +1,149 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>FAQs | Skennings Education</title>
+  <meta name="description" content="Frequently asked questions about online GCSE/iGCSE and A Level teaching with Skennings Education."/>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js?v=2"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-logo" href="index.html">Skennings Education</a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="parents.html">Home</a>
+      <a href="subjects.html">Subjects</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="prices.html">Prices</a>
+      <a href="one-to-one.html">One-to-one</a>
+      <a href="for-schools.html">For schools</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="holiday-masterclasses.html">Holiday masterclasses</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+
+    <!-- LEFT: FAQ CONTENT -->
+    <div class="card pad">
+      <h1>Frequently asked questions</h1>
+
+      <div class="hr"></div>
+
+      <h3>What subjects do you offer?</h3>
+      <p class="small">
+        We offer Computer Science, Business Studies, and English at GCSE/iGCSE and A Level.
+      </p>
+
+      <div class="hr"></div>
+
+      <h3>Are lessons live or pre-recorded?</h3>
+      <p class="small">
+        All lessons are live and teacher-led. Recordings are provided for small-group classes so students can review the content.
+      </p>
+
+      <div class="hr"></div>
+
+      <h3>What is the class size?</h3>
+      <p class="small">
+        Small-group classes have a maximum of 10 students to ensure interaction, feedback, and effective learning.
+      </p>
+
+      <div class="hr"></div>
+
+      <h3>Do you offer one-to-one tuition?</h3>
+      <p class="small">
+        Yes. We offer private one-to-one tuition for GCSE/iGCSE and A Level students who benefit from personalised support.
+      </p>
+
+      <div class="hr"></div>
+
+      <h3>How does pricing work?</h3>
+      <p class="small">
+        Pricing is per class. See the <a href="prices.html">Prices</a> page for current per-class pricing for group classes and private one-to-one tuition.
+      </p>
+
+      <div class="hr"></div>
+
+      <h3>Are your teachers qualified?</h3>
+      <p class="small">
+        All teaching is delivered by experienced teachers. School partnerships are supported by teachers with QTS and enhanced DBS checks.
+      </p>
+
+      <div class="hr"></div>
+
+      <h3>Which exam boards do you cover?</h3>
+      <p class="small">
+        Teaching is aligned to the studentâ€™s exam board, including AQA, OCR, Edexcel, and Cambridge (CAIE).
+      </p>
+
+      <div class="hr"></div>
+
+      <h3>Can schools fund tuition?</h3>
+      <p class="small">
+        Yes. We work with schools to provide remote teaching and tutoring, including support funded through Pupil Premium.
+      </p>
+
+      <div class="hr"></div>
+
+      <h3>How do we get started?</h3>
+      <p class="small">
+        Simply send an enquiry and weâ€™ll discuss availability, suitability, and the best option for your child or school.
+      </p>
+    </div>
+
+    <!-- RIGHT: CONTACT + FORM (MATCHES OTHER PAGES) -->
+    <div class="card pad">
+      <h2 style="margin-top:0">Contact</h2>
+      <p class="small">
+        Phone: <a href="tel:07405664243">07405664243</a><br>
+        Email: <a href="mailto:ben@skenningseducation.com">ben@skenningseducation.com</a>
+      </p>
+
+      <div class="hr"></div>
+
+      <h3 style="margin:0 0 8px">Quick enquiry</h3>
+      <div data-enquiry-form data-subject="FAQ enquiry â€“ Skennings Education"></div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Skennings Education</strong>
+      <div class="small">Online teaching for GCSE/iGCSE and A Level</div>
+    </div>
+
+    <div>
+      <div class="small" style="font-weight:800;margin-bottom:8px">Quick links</div>
+      <div class="small">
+        <a href="index.html">Home</a><br>
+        <a href="subjects.html">Subjects</a><br>
+        <a href="how-it-works.html">How it works</a><br>
+        <a href="prices.html">Prices</a><br>
+        <a href="one-to-one.html">One-to-one</a><br>
+        <a href="for-schools.html">For schools</a><br>
+        <a href="holiday-masterclasses.html">Holiday masterclasses</a><br>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
