@@ -1,5 +1,8 @@
 (function () {
 
+  // -----------------------------
+  // Active nav link highlighting
+  // -----------------------------
   function setActiveNavLink() {
     const path = location.pathname.split("/").pop() || "index.html";
 
@@ -29,6 +32,9 @@
     document.head.appendChild(link);
   }
 
+  // -----------------------------
+  // Helpers
+  // -----------------------------
   async function fetchFormHtml(url, fallbackMessage) {
     try {
       const res = await fetch(url, { cache: "no-cache" });
@@ -39,6 +45,33 @@
     }
   }
 
+  // Theme dropdowns/selects inside injected forms:
+  // - add .input so they match other fields
+  // - wrap in .select-wrap so the CSS arrow appears
+  function themeInjectedSelects(root) {
+    if (!root) return;
+
+    const selects = root.querySelectorAll("select");
+    selects.forEach(sel => {
+      sel.classList.add("input");
+
+      const parent = sel.parentElement;
+      if (!parent) return;
+
+      // Prevent double-wrapping
+      if (parent.classList.contains("select-wrap")) return;
+
+      const wrap = document.createElement("div");
+      wrap.className = "select-wrap";
+
+      parent.insertBefore(wrap, sel);
+      wrap.appendChild(sel);
+    });
+  }
+
+  // -----------------------------
+  // Inject enquiry forms (parents + schools)
+  // -----------------------------
   async function injectEnquiryForms() {
     const targets = document.querySelectorAll('[data-enquiry-form]');
     if (!targets.length) return;
@@ -56,9 +89,13 @@
 
     targets.forEach((t, idx) => {
       const mode = (t.getAttribute("data-form") || "").toLowerCase();
-      const formHtml = mode === "school" ? schoolHtml : defaultHtml;
+      const isSchool = mode === "school";
 
+      const formHtml = isSchool ? schoolHtml : defaultHtml;
       t.innerHTML = formHtml;
+
+      // Apply select styling/wrapping after injection
+      themeInjectedSelects(t);
 
       const form = t.querySelector("form");
       if (!form) return;
@@ -74,8 +111,15 @@
       const error = form.querySelector("#form-error");
       const button = form.querySelector('button[type="submit"]');
 
+      // Give these unique IDs per injected instance (avoid collisions)
       if (success) success.id = `form-success-${idx}`;
       if (error) error.id = `form-error-${idx}`;
+
+      // Cache the correct submit label for this form instance
+      const submitLabel = isSchool ? "Request availability" : "Send enquiry";
+
+      // Ensure initial button label is correct (in case the HTML differs)
+      if (button) button.textContent = submitLabel;
 
       form.addEventListener("submit", async function (e) {
         e.preventDefault();
@@ -100,6 +144,10 @@
 
           if (response.ok) {
             form.reset();
+
+            // Re-apply select theming in case reset/DOM changes affect it
+            themeInjectedSelects(t);
+
             if (sEl) sEl.style.display = "block";
           } else {
             if (eEl) eEl.style.display = "block";
@@ -109,19 +157,16 @@
         } finally {
           if (button) {
             button.disabled = false;
-
-            // Restore the correct button label for each mode
-            if (mode === "school") {
-              button.textContent = "Request availability";
-            } else {
-              button.textContent = "Send enquiry";
-            }
+            button.textContent = submitLabel;
           }
         }
       });
     });
   }
 
+  // -----------------------------
+  // Init
+  // -----------------------------
   function init() {
     setActiveNavLink();
     injectEnquiryForms();
