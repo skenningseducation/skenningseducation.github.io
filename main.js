@@ -2,7 +2,9 @@
 
   function setActiveNavLink() {
     const path = location.pathname.split("/").pop() || "index.html";
-    const links = document.querySelectorAll('.menu a[href]');
+
+    // Support both the new nav (.site-nav) and legacy nav (.menu) if any old pages remain
+    const links = document.querySelectorAll('.site-nav a[href], .menu a[href]');
 
     links.forEach(a => a.classList.remove("is-active"));
 
@@ -12,10 +14,10 @@
 
   // Switch active state immediately on click (nice UX)
   document.addEventListener("click", (e) => {
-    const a = e.target.closest('.menu a[href]');
+    const a = e.target.closest('.site-nav a[href], .menu a[href]');
     if (!a) return;
 
-    document.querySelectorAll('.menu a').forEach(x => x.classList.remove("is-active"));
+    document.querySelectorAll('.site-nav a, .menu a').forEach(x => x.classList.remove("is-active"));
     a.classList.add("is-active");
   });
 
@@ -53,6 +55,7 @@
 
       form.id = `contact-form-${idx}`;
 
+      // Allow pages to set a custom email subject via data-subject
       const subjectFromDiv = t.getAttribute("data-subject") || "New enquiry – Skennings Education";
       const subjInput = form.querySelector('input[name="_subject"]');
       if (subjInput) subjInput.value = subjectFromDiv;
@@ -60,6 +63,7 @@
       const success = form.querySelector("#form-success");
       const error = form.querySelector("#form-error");
       const button = form.querySelector('button[type="submit"]');
+
       if (success) success.id = `form-success-${idx}`;
       if (error) error.id = `form-error-${idx}`;
 
