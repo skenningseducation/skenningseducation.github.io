@@ -1,0 +1,77 @@
+<form id="contact-form" action="https://formspree.io/f/mreqkrze" method="POST">
+
+  <!-- Honeypot -->
+  <div style="position:absolute;left:-9999px">
+    <label>Leave this field empty</label>
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+  </div>
+
+  <!-- CONTACT -->
+  <input class="input" name="school_name" placeholder="School name" required>
+  <input class="input" name="contact_name" placeholder="Contact name" required>
+  <input class="input" name="role" placeholder="Role / position (e.g. Head of Dept, Timetabler)">
+  <input class="input" name="email" type="email" placeholder="Email address" required>
+  <input class="input" name="phone" placeholder="Phone (optional)">
+
+  <div class="hr"></div>
+
+  <!-- PROVISION -->
+  <select class="input" name="subject_area" required>
+    <option value="" disabled selected>Subject area</option>
+    <option>Computer Science</option>
+    <option>Business Studies</option>
+    <option>English</option>
+    <option>Maths</option>
+    <option>Other</option>
+  </select>
+
+  <select class="input" name="level" required>
+    <option value="" disabled selected>Level</option>
+    <option>KS3</option>
+    <option>GCSE / iGCSE</option>
+    <option>A Level</option>
+    <option>Mixed</option>
+  </select>
+
+  <input class="input" name="exam_board" placeholder="Exam board (if applicable) e.g. AQA, OCR, Edexcel, Cambridge">
+  <input class="input" name="year_groups" placeholder="Year group(s) (e.g. 8, 10, 11, 12)">
+  <input class="input" name="student_count" placeholder="Approx. number of students (e.g. 15)">
+
+  <div class="hr"></div>
+
+  <!-- DELIVERY CONTEXT -->
+  <select class="input" name="support_type" required>
+    <option value="" disabled selected>Type of support required</option>
+    <option>Ongoing weekly teaching</option>
+    <option>Short-term cover</option>
+    <option>Long-term vacancy cover</option>
+    <option>Intervention / funded tutoring</option>
+    <option>Exam revision programme</option>
+  </select>
+
+  <input class="input" name="start_date" placeholder="Preferred start date (or ASAP)">
+
+  <textarea class="input" name="message" placeholder="Brief outline of your requirement (e.g. staffing gap, timetable coverage, exam focus, constraints)…"></textarea>
+
+  <label class="small" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px">
+    <input type="checkbox" name="gdpr_consent" required style="margin-top:3px">
+    <span>
+      I consent to Skennings Education storing and processing this information for the purpose of responding to this school enquiry.
+    </span>
+  </label>
+
+  <!-- Formspree helpers -->
+  <input type="hidden" name="_subject" value="School enquiry – Skennings Education">
+  <input type="hidden" name="_template" value="table">
+
+  <div class="btnrow">
+    <button class="btn primary" type="submit">Request availability</button>
+  </div>
+
+  <p class="small" id="form-success" style="display:none;color:var(--brand2);margin-top:10px">
+    Thank you — your message has been sent successfully.
+  </p>
+  <p class="small" id="form-error" style="display:none;color:#ffb4b4;margin-top:10px">
+    Something went wrong. Please try again or email us directly.
+  </p>
+</form>
