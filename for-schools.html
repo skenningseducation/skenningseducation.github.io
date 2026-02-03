@@ -1,56 +1,30 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>For Schools | Remote Supply Teaching | Skennings Education</title>
   <meta name="description" content="Remote supply teaching for secondary schools: cover staff absence, timetable gaps, intervention and tutoring. QTS + enhanced DBS teachers."/>
-  <style>
-    :root{--bg:#0b1220;--panel:#0f1a2e;--text:#e8eefc;--muted:#b7c3dd;--brand:#6aa7ff;--brand2:#8bffcc;--line:rgba(255,255,255,.12);--shadow:0 10px 30px rgba(0,0,0,.35);--radius:18px;--maxw:1100px}
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);
-      background:linear-gradient(180deg,#081024 0%, #0b1220 40%, #07101f 100%)}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:var(--maxw);margin:0 auto;padding:20px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
-    .logo{font-weight:800}
-    nav{display:flex;flex-wrap:wrap;gap:10px}
-    nav a{padding:8px 10px;border-radius:12px;border:1px solid transparent;color:var(--muted)}
-    nav a:hover{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
-    .panel{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
-    .pad{padding:18px}
-    h1{font-size:38px;line-height:1.1;margin:18px 0 10px}
-    p{margin:0 0 12px;color:var(--muted);line-height:1.55}
-    h2{margin:0 0 10px;font-size:24px}
-    ul{margin:10px 0 0 18px;color:var(--muted);line-height:1.55}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
-    .btn{display:inline-block;padding:10px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
-    .btn.primary{border-color:rgba(106,167,255,.55);background:linear-gradient(90deg, rgba(106,167,255,.25), rgba(139,255,204,.12))}
-    .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
-    .small{font-size:13px;color:var(--muted)}
-    footer{padding:26px 0 10px;border-top:1px solid var(--line);margin-top:18px}
-    input,select,textarea{width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(0,0,0,.18);color:var(--text)}
-    label{font-size:13px;color:var(--muted)}
-    .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-    @media (max-width:700px){.row{grid-template-columns:1fr}}
-  </style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <div class="logo">Skennings Education</div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="subjects.html">Subjects</a>
-        <a href="how-it-works.html">How it works</a>
-        <a href="prices.html">Prices</a>
-        <a href="one-to-one.html">One-to-one</a>
-        <a href="for-schools.html">For schools</a>
-        <a href="faqs.html">FAQs</a>
-        <a href="holiday-masterclasses.html">Holiday masterclasses</a>
-      </nav>
-    </header>
+    <header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-logo" href="index.html">Skennings Education</a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="subjects.html">Subjects</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="prices.html">Prices</a>
+      <a href="one-to-one.html">One-to-one</a>
+      <a href="for-schools.html">For schools</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="holiday-masterclasses.html">Holiday masterclasses</a>
+    </nav>
+  </div>
+</header>
 
     <h1>Remote supply teaching for secondary schools</h1>
     <p>
@@ -66,7 +40,7 @@
     <section style="padding:18px 0">
       <div class="grid">
         <div class="panel pad">
-          <h2>What “Remote Supply” means</h2>
+          <h2>What â€œRemote Supplyâ€ means</h2>
           <p class="small">
             We teach your scheduled class live via video link. A member of staff supervises in the room while our teacher
             delivers instruction, questioning, and independent work.
@@ -126,7 +100,7 @@
           <li>English</li>
         </ul>
         <p class="small" style="margin-top:10px">
-          If you need a specific exam board focus, include it in the enquiry and we’ll align delivery and resources.
+          If you need a specific exam board focus, include it in the enquiry and weâ€™ll align delivery and resources.
         </p>
       </div>
     </section>
@@ -134,7 +108,7 @@
     <section id="enquiry" style="padding:18px 0">
       <div class="panel pad">
         <h2>School enquiry</h2>
-        <p class="small">Share the basics and we’ll respond with availability and a simple onboarding plan.</p>
+        <p class="small">Share the basics and weâ€™ll respond with availability and a simple onboarding plan.</p>
 
         <form action="#" method="post">
           <div class="row">
@@ -152,17 +126,17 @@
             <div>
               <label>Support needed</label>
               <select name="support" required>
-                <option value="">Select…</option>
-                <option>Remote supply – timetable cover</option>
-                <option>Intervention – small group</option>
-                <option>Tutoring – one-to-one</option>
+                <option value="">Selectâ€¦</option>
+                <option>Remote supply â€“ timetable cover</option>
+                <option>Intervention â€“ small group</option>
+                <option>Tutoring â€“ one-to-one</option>
                 <option>Combination</option>
               </select>
             </div>
             <div>
               <label>Subject</label>
               <select name="subject" required>
-                <option value="">Select…</option>
+                <option value="">Selectâ€¦</option>
                 <option>Computer Science</option>
                 <option>Business Studies</option>
                 <option>English</option>
@@ -172,7 +146,7 @@
 
           <div style="margin-top:10px">
             <label>Details</label>
-            <textarea name="details" rows="6" placeholder="Year group, exam board, start date, lessons per week, class size, and whether you have a cover supervisor in-room…"></textarea>
+            <textarea name="details" rows="6" placeholder="Year group, exam board, start date, lessons per week, class size, and whether you have a cover supervisor in-roomâ€¦"></textarea>
           </div>
 
           <div class="cta" style="margin-top:12px">
@@ -181,16 +155,19 @@
           </div>
 
           <p class="small" style="margin-top:10px">
-            Phone: <strong>07405664243</strong> · Email: <strong>ben@skenningseducation.com</strong>
+            Phone: <strong>07405664243</strong> Â· Email: <strong>ben@skenningseducation.com</strong>
           </p>
         </form>
       </div>
     </section>
 
     <footer>
-      <div class="small">© 2026 Skennings Education. All rights reserved.</div>
+      <div class="small">Â© 2026 Skennings Education. All rights reserved.</div>
     </footer>
   </div>
 </body>
 </html>
+
+
+
 
