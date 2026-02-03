@@ -43,9 +43,7 @@ p{line-height:1.5}
   padding:0 18px;
 }
 
-.hero{
-  padding:34px 0 50px;
-}
+.hero{padding:34px 0 50px}
 
 .hr{
   height:1px;
@@ -76,7 +74,7 @@ p{line-height:1.5}
 .subject-card p{margin:0}
 
 /* =========================
-   BADGES / NOTICES
+   BADGES
    ========================= */
 .badges{
   display:flex;
@@ -98,7 +96,7 @@ p{line-height:1.5}
 }
 
 /* =========================
-   BUTTONS — ALL GRADIENT
+   BUTTONS
    ========================= */
 .btnrow{
   display:flex;
@@ -116,12 +114,10 @@ p{line-height:1.5}
   font-size:14px;
   font-weight:700;
   text-decoration:none;
-
   color:var(--text);
   background:rgba(255,255,255,.03);
   border:1px solid var(--line);
-
-  transition:transform .12s ease, background .15s ease, border-color .15s ease, color .15s ease;
+  transition:transform .12s ease, background .15s ease, border-color .15s ease;
 }
 
 .btn:hover{
@@ -130,21 +126,10 @@ p{line-height:1.5}
   border-color:rgba(255,255,255,.18);
 }
 
-.btn:active{transform:translateY(0)}
-
 .btn.primary{
   color:#071018;
   border-color:transparent;
   background:linear-gradient(135deg,var(--brand2),var(--brand));
-}
-
-.btn.primary:hover{
-  filter:saturate(1.05);
-}
-
-/* Buttons used inside forms */
-button.btn{
-  cursor:pointer;
 }
 
 /* =========================
@@ -160,12 +145,10 @@ button.btn{
   display:grid;
   grid-template-columns:1.6fr .9fr;
   gap:18px;
-  align-items:start;
 }
 
 @media (max-width: 940px){
-  .hero-grid{grid-template-columns:1fr}
-  .grid2{grid-template-columns:1fr}
+  .hero-grid,.grid2{grid-template-columns:1fr}
 }
 
 /* =========================
@@ -174,7 +157,6 @@ button.btn{
 .list{
   margin:10px 0 0;
   padding-left:18px;
-  color:var(--text);
 }
 .list li{margin:6px 0}
 .list li::marker{color:var(--muted)}
@@ -185,15 +167,16 @@ button.btn{
 .table{
   width:100%;
   border-collapse:collapse;
-  overflow:hidden;
   border-radius:14px;
+  overflow:hidden;
   border:1px solid var(--line);
 }
+
 .table th,.table td{
-  padding:12px 12px;
+  padding:12px;
   border-bottom:1px solid var(--line);
-  text-align:left;
 }
+
 .table th{color:var(--muted);font-weight:800}
 .table tr:last-child td{border-bottom:none}
 
@@ -204,7 +187,7 @@ label{display:block;margin:0 0 6px}
 
 .input{
   width:100%;
-  padding:12px 12px;
+  padding:12px;
   border-radius:14px;
   border:1px solid var(--line);
   background:rgba(255,255,255,.03);
@@ -213,6 +196,7 @@ label{display:block;margin:0 0 6px}
 }
 
 .input::placeholder{color:rgba(183,195,221,.75)}
+
 .input:focus{
   border-color:rgba(255,255,255,.22);
   background:rgba(255,255,255,.04);
@@ -220,8 +204,8 @@ label{display:block;margin:0 0 6px}
 
 textarea.input{resize:vertical;min-height:120px}
 
-/* Success / error blocks inside enquiry form */
-#form-success, #form-error{
+/* Success / error blocks */
+#form-success,#form-error{
   display:none;
   margin-top:10px;
   padding:10px 12px;
@@ -230,161 +214,96 @@ textarea.input{resize:vertical;min-height:120px}
   background:rgba(255,255,255,.03);
   font-size:13px;
 }
+
 #form-success{border-color:rgba(139,255,204,.35)}
 #form-error{border-color:rgba(255,106,106,.35)}
 
 /* =========================
-   FOOTER
+   HEADER / NAV
    ========================= */
-.footer{
-  border-top:1px solid var(--line);
-  background:rgba(7,11,20,.55);
-  padding:26px 0;
-}
-
-.footer-grid{
-  display:grid;
-  grid-template-columns:1.3fr .7fr;
-  gap:16px;
-}
-
-@media (max-width: 900px){
-  .footer-grid{grid-template-columns:1fr}
-}
-
-/* =========================================================
-   Unified Header / Nav (preferred "Subjects" style)
-   ========================================================= */
 .site-header{
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(7,11,20,.78);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(7,11,20,.78);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
 }
 
 .site-header__inner{
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 14px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.site-logo{
-  font-weight: 800;
-  letter-spacing: .2px;
-  color: var(--text);
-  text-decoration: none;
-  padding: 6px 0;
-}
-
-.site-logo:hover{ opacity: .92; }
-
-.site-nav{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: flex-end;
-  align-items:center;
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:14px 20px;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
 }
 
 .site-nav a{
-  color: var(--muted);
-  text-decoration: none;
-  padding: 8px 10px;
-  border-radius: 12px;
-  border: 1px solid transparent;
-  background: transparent;
+  color:var(--muted);
+  padding:8px 10px;
+  border-radius:12px;
+  text-decoration:none;
 }
 
 .site-nav a:hover{
-  color: var(--text);
-  border-color: var(--line);
-  background: rgba(255,255,255,.03);
+  color:var(--text);
+  background:rgba(255,255,255,.03);
 }
 
-/* Active/current page for site-nav */
 .site-nav a.is-active{
   color:#071018;
-  border-color:transparent;
   background:linear-gradient(135deg,var(--brand2),var(--brand));
 }
 
-/* Mobile */
-@media (max-width: 820px){
-  .site-header__inner{
-    justify-content:flex-start;
-    flex-wrap:wrap;
-  }
-  .site-nav{justify-content:flex-start}
-}
 /* =========================
-   SELECT / DROPDOWNS (match site theme)
-   - Works for normal selects AND injected enquiry form selects
+   SELECT / DROPDOWNS
    ========================= */
-
-/* Targets:
-   1) <select class="input">
-   2) any <select> inside the injected enquiry form
-*/
 select.input,
 [data-enquiry-form] select{
   width:100%;
+  padding:12px 44px 12px 12px;
   border-radius:14px;
   border:1px solid var(--line);
-  color:var(--text);
-  outline:none;
-
-  padding:12px 44px 12px 12px; /* room for arrow */
-  cursor:pointer;
-
   background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02));
-
+  color:var(--text);
+  cursor:pointer;
+  appearance:none;
   -webkit-appearance:none;
   -moz-appearance:none;
-  appearance:none;
-
-  transition:transform .12s ease, background .15s ease, border-color .15s ease, box-shadow .15s ease;
 }
 
-/* hover should feel like your buttons */
 select.input:hover,
 [data-enquiry-form] select:hover{
-  background:linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.03));
   border-color:rgba(255,255,255,.18);
 }
 
-/* focus should use your brand colour (like primary button) */
 select.input:focus,
 [data-enquiry-form] select:focus{
-  border-color:rgba(106,167,255,.55); /* brand */
-  background:linear-gradient(180deg, rgba(106,167,255,.12), rgba(255,255,255,.03));
+  border-color:rgba(106,167,255,.55);
   box-shadow:0 0 0 4px rgba(106,167,255,.16);
 }
 
-/* Options list theme (where supported) */
-select.input option,
-[data-enquiry-form] select option{
+/* Placeholder state (Subject / Level) */
+select.input:required:invalid,
+[data-enquiry-form] select:required:invalid{
+  color:rgba(183,195,221,.7);
+}
+
+/* Valid selection */
+select.input:required:valid,
+[data-enquiry-form] select:required:valid{
+  color:var(--text);
+}
+
+/* Dropdown options */
+select option{
   background:var(--panel);
   color:var(--text);
 }
 
-/* Disabled */
-select.input:disabled,
-[data-enquiry-form] select:disabled{
-  opacity:.6;
-  cursor:not-allowed;
-}
-
-/* Arrow wrapper (only shows if the select is wrapped in .select-wrap) */
-.select-wrap{
-  position:relative;
-}
-
+/* Arrow */
+.select-wrap{position:relative}
 .select-wrap::after{
   content:"";
   position:absolute;
@@ -396,9 +315,4 @@ select.input:disabled,
   border-right:2px solid rgba(232,238,252,.75);
   border-bottom:2px solid rgba(232,238,252,.75);
   pointer-events:none;
-}
-
-.select-wrap:focus-within::after{
-  border-right-color:rgba(139,255,204,.85); /* brand2 */
-  border-bottom-color:rgba(139,255,204,.85);
 }
